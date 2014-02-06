@@ -1,0 +1,31 @@
+﻿<UserControl x:Class="mialejandria.mifaro.muebles.Estanteria"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      Height="39cm" Width="45cm"
+	 Background="{x:Null}" Loaded="Page_Loaded" Margin="5cm,0,0,0">
+
+    <Grid Background="{x:Null}" >
+        <WrapPanel Margin="20,20,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="38cm" Width="44cm" Name="grid1" Background="White">
+            <StackPanel Orientation="Horizontal" Height="8.5cm" HorizontalAlignment="Left" Margin="0.5cm" Background="#FF515151" Name="hueco1" VerticalAlignment="Top" Width="10cm" />
+            <StackPanel Orientation="Horizontal" Height="8.5cm" HorizontalAlignment="Left" Margin="0.5cm" Background="#FF515151"  VerticalAlignment="Top" Width="10cm" />
+            <StackPanel Orientation="Horizontal" Height="8.5cm" HorizontalAlignment="Left" Margin="0.5cm" Background="#FF515151"  VerticalAlignment="Top" Width="10cm" />
+            <StackPanel Orientation="Horizontal" Height="8.5cm" HorizontalAlignment="Left" Margin="0.5cm" Background="#FF515151"  VerticalAlignment="Top" Width="10cm" />
+            <StackPanel Orientation="Horizontal" Height="8.5cm" HorizontalAlignment="Left" Margin="0.5cm" Background="#FF515151"  VerticalAlignment="Top" Width="10cm" />
+            <StackPanel Orientation="Horizontal" Height="8.5cm" HorizontalAlignment="Left" Margin="0.5cm" Background="#FF515151"  VerticalAlignment="Top" Width="10cm" />
+            <StackPanel Orientation="Horizontal" Height="8.5cm" HorizontalAlignment="Left" Margin="0.5cm" Background="#FF515151"  VerticalAlignment="Top" Width="10cm" />
+            <StackPanel Orientation="Horizontal" Height="8.5cm" HorizontalAlignment="Left" Margin="0.5cm" Background="#FF515151"  VerticalAlignment="Top" Width="10cm" />
+            <StackPanel Orientation="Horizontal" Height="8.5cm" HorizontalAlignment="Left" Margin="0.5cm" Background="#FF515151"  VerticalAlignment="Top" Width="10cm" />
+            <StackPanel Orientation="Horizontal" Height="8.5cm" HorizontalAlignment="Left" Margin="0.5cm" Background="#FF515151"  VerticalAlignment="Top" Width="10cm" />
+            <StackPanel Orientation="Horizontal" Height="8.5cm" HorizontalAlignment="Left" Margin="0.5cm" Background="#FF515151"  VerticalAlignment="Top" Width="10cm" />
+            <StackPanel Orientation="Horizontal" Height="8.5cm" HorizontalAlignment="Left" Margin="0.5cm" Background="#FF515151"  VerticalAlignment="Top" Width="10cm" />
+            <StackPanel Orientation="Horizontal" Height="8.5cm" HorizontalAlignment="Left" Margin="0.5cm" Background="#FF515151"  VerticalAlignment="Top" Width="10cm" />
+            <StackPanel Orientation="Horizontal" Height="8.5cm" HorizontalAlignment="Left" Margin="0.5cm" Background="#FF515151"  VerticalAlignment="Top" Width="10cm" />
+            <StackPanel Orientation="Horizontal" Height="8.5cm" HorizontalAlignment="Left" Margin="0.5cm" Background="#FF515151"  VerticalAlignment="Top" Width="10cm" />
+            <StackPanel Orientation="Horizontal" Height="8.5cm" HorizontalAlignment="Left" Margin="0.5cm" Background="#FF515151"  VerticalAlignment="Top" Width="10cm" />
+            
+        </WrapPanel>
+    </Grid>
+</UserControl>

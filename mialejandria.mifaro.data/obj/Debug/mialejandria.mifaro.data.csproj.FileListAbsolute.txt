@@ -1,0 +1,8 @@
+Z:\PROYECTOS\2014\mialejandria.mifaro\mialejandria.mifaro.data\bin\Debug\mialejandria.mifaro.data.dll
+Z:\PROYECTOS\2014\mialejandria.mifaro\mialejandria.mifaro.data\bin\Debug\mialejandria.mifaro.data.pdb
+Z:\PROYECTOS\2014\mialejandria.mifaro\mialejandria.mifaro.data\obj\Debug\ResolveAssemblyReference.cache
+Z:\PROYECTOS\2014\mialejandria.mifaro\mialejandria.mifaro.data\obj\Debug\mialejandria.mifaro.data.Properties.Resources.resources
+Z:\PROYECTOS\2014\mialejandria.mifaro\mialejandria.mifaro.data\obj\Debug\GenerateResource.read.1.tlog
+Z:\PROYECTOS\2014\mialejandria.mifaro\mialejandria.mifaro.data\obj\Debug\GenerateResource.write.1.tlog
+Z:\PROYECTOS\2014\mialejandria.mifaro\mialejandria.mifaro.data\obj\Debug\mialejandria.mifaro.data.dll
+Z:\PROYECTOS\2014\mialejandria.mifaro\mialejandria.mifaro.data\obj\Debug\mialejandria.mifaro.data.pdb

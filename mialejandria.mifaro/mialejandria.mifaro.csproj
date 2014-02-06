@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{1CA4E769-1E93-4290-BD9D-C27B0F920607}</ProjectGuid>
+    <ProjectGuid>{DE9ECB40-1E3A-4DF3-AAE3-CBF894E70744}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>mialejandria.mifaro</RootNamespace>
@@ -17,7 +17,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
-    <PlatformTarget>x86</PlatformTarget>
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -27,13 +27,16 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
-    <PlatformTarget>x86</PlatformTarget>
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
-    <Optimize>true</Optimize>
+    <Optimize>false</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Images\favicon.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -55,20 +58,40 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="MainWindow.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="MainWindow.xaml.cs">
-      <DependentUpon>MainWindow.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="comun.cs" />
+    <Compile Include="Controles\BotonCerrado.xaml.cs">
+      <DependentUpon>BotonCerrado.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\BotonRestaurar.xaml.cs">
+      <DependentUpon>BotonRestaurar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Etiqueta.xaml.cs">
+      <DependentUpon>Etiqueta.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\pnlCompartir.xaml.cs">
+      <DependentUpon>pnlCompartir.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\pnlMenuLugar.xaml.cs">
+      <DependentUpon>pnlMenuLugar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="muebles\Carpesano.xaml.cs">
+      <DependentUpon>Carpesano.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="muebles\Estanteria.xaml.cs">
+      <DependentUpon>Estanteria.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PanelesVisores\pnlVisor3d.xaml.cs">
+      <DependentUpon>pnlVisor3d.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -91,6 +114,94 @@
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
     <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\addCarpeta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Business-Tree-structure-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\carpeta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\discoRED.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\iconVistaContenido.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\iconVistaIcono.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\LogoMiAlejandria.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Maps-and-Geolocation-Marker-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Overview-Pages-3-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\pc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Very-Basic-Cancel-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\wood-textures_00394149.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\favicon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="Controles\BotonCerrado.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controles\BotonRestaurar.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controles\Etiqueta.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controles\pnlCompartir.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controles\pnlMenuLugar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="muebles\Carpesano.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="muebles\Estanteria.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="PanelesVisores\pnlVisor3d.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\mialejandria.mifaro.debug\mialejandria.mifaro.debug.csproj">
+      <Project>{FAE1D1B0-F6E1-4D56-B61D-E4175F466BF9}</Project>
+      <Name>mialejandria.mifaro.debug</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\mialejandria.mifaro.logic\mialejandria.mifaro.logic.csproj">
+      <Project>{F50C9B0A-C632-43CC-A293-67E6F83289CD}</Project>
+      <Name>mialejandria.mifaro.logic</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
