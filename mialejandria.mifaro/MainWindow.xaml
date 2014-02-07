@@ -16,7 +16,7 @@
         </Grid>
        
         
-        <my:pnlMenuLugar Height="30" HorizontalAlignment="Left" Margin="8,30,0,0" x:Name="pnlMenuLugar1" VerticalAlignment="Top" Width="153" />
+        <my:pnlMenuLugar Height="30" HorizontalAlignment="Left" Margin="8,30,0,0" x:Name="pnlMenuLugar1" VerticalAlignment="Top" Width="160" />
     
     </Grid>
 </Window>

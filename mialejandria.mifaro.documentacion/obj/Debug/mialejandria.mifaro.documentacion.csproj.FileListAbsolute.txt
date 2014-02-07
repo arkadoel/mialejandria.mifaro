@@ -1,0 +1,5 @@
+Z:\PROYECTOS\2014\mialejandria.mifaro\mialejandria.mifaro.documentacion\bin\Debug\mialejandria.mifaro.documentacion.dll
+Z:\PROYECTOS\2014\mialejandria.mifaro\mialejandria.mifaro.documentacion\bin\Debug\mialejandria.mifaro.documentacion.pdb
+Z:\PROYECTOS\2014\mialejandria.mifaro\mialejandria.mifaro.documentacion\obj\Debug\ResolveAssemblyReference.cache
+Z:\PROYECTOS\2014\mialejandria.mifaro\mialejandria.mifaro.documentacion\obj\Debug\mialejandria.mifaro.documentacion.dll
+Z:\PROYECTOS\2014\mialejandria.mifaro\mialejandria.mifaro.documentacion\obj\Debug\mialejandria.mifaro.documentacion.pdb

@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mialejandria.mifaro.debug",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mialejandria.mifaro", "mialejandria.mifaro\mialejandria.mifaro.csproj", "{DE9ECB40-1E3A-4DF3-AAE3-CBF894E70744}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documentacion", "Documentacion", "{8553A30B-9FDB-4C6C-A0B2-4EAA012E0A4E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mialejandria.mifaro.documentacion", "mialejandria.mifaro.documentacion\mialejandria.mifaro.documentacion.csproj", "{47FFBC49-3B3E-47C4-B9B8-877CD31E85BE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -59,8 +63,21 @@ Global
 		{DE9ECB40-1E3A-4DF3-AAE3-CBF894E70744}.Release|Mixed Platforms.Build.0 = Release|x86
 		{DE9ECB40-1E3A-4DF3-AAE3-CBF894E70744}.Release|x86.ActiveCfg = Release|x86
 		{DE9ECB40-1E3A-4DF3-AAE3-CBF894E70744}.Release|x86.Build.0 = Release|x86
+		{47FFBC49-3B3E-47C4-B9B8-877CD31E85BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47FFBC49-3B3E-47C4-B9B8-877CD31E85BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47FFBC49-3B3E-47C4-B9B8-877CD31E85BE}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{47FFBC49-3B3E-47C4-B9B8-877CD31E85BE}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{47FFBC49-3B3E-47C4-B9B8-877CD31E85BE}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{47FFBC49-3B3E-47C4-B9B8-877CD31E85BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47FFBC49-3B3E-47C4-B9B8-877CD31E85BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47FFBC49-3B3E-47C4-B9B8-877CD31E85BE}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{47FFBC49-3B3E-47C4-B9B8-877CD31E85BE}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{47FFBC49-3B3E-47C4-B9B8-877CD31E85BE}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{47FFBC49-3B3E-47C4-B9B8-877CD31E85BE} = {8553A30B-9FDB-4C6C-A0B2-4EAA012E0A4E}
 	EndGlobalSection
 EndGlobal

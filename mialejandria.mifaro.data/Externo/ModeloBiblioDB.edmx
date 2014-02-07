@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="biblioDBModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="biblioDBModelStoreContainer">
+          <EntitySet Name="Fondo" EntityType="biblioDBModel.Store.Fondo" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Serie" EntityType="biblioDBModel.Store.Serie" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="UnidadDocumental" EntityType="biblioDBModel.Store.UnidadDocumental" store:Type="Tables" Schema="dbo" />
+        </EntityContainer>
+        <EntityType Name="Fondo">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Titulo" Type="varchar" MaxLength="50" />
+          <Property Name="Nivel" Type="varchar" MaxLength="50" />
+          <Property Name="CodigoReferencia" Type="varchar" MaxLength="1024" />
+          <Property Name="CodRefPadre" Type="varchar" MaxLength="1024" />
+          <Property Name="Fecha" Type="datetime" />
+        </EntityType>
+        <EntityType Name="Serie">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Titulo" Type="varchar" MaxLength="50" />
+          <Property Name="Nivel" Type="varchar" MaxLength="50" />
+          <Property Name="CodigoReferencia" Type="varchar" MaxLength="1024" />
+          <Property Name="CodRefPadre" Type="varchar" MaxLength="1024" />
+          <Property Name="Fecha" Type="datetime" />
+        </EntityType>
+        <EntityType Name="UnidadDocumental">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Titulo" Type="varchar" MaxLength="50" />
+          <Property Name="Nivel" Type="varchar" MaxLength="50" />
+          <Property Name="CodigoReferencia" Type="varchar" MaxLength="1024" />
+          <Property Name="CodRefPadre" Type="varchar" MaxLength="1024" />
+          <Property Name="Fecha" Type="datetime" />
+          <Property Name="VolumenSoporte" Type="varchar" MaxLength="1024" />
+        </EntityType>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="biblioDBModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="biblioDBEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Fondos" EntityType="biblioDBModel.Fondo" />
+          <EntitySet Name="Series" EntityType="biblioDBModel.Serie" />
+          <EntitySet Name="UnidadesDocumentales" EntityType="biblioDBModel.UnidadDocumental" />
+        </EntityContainer>
+        <EntityType Name="Fondo">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="Titulo" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Nivel" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="CodigoReferencia" MaxLength="1024" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="CodRefPadre" MaxLength="1024" FixedLength="false" Unicode="false" />
+          <Property Type="DateTime" Name="Fecha" />
+        </EntityType>
+        <EntityType Name="Serie">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="Titulo" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Nivel" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="CodigoReferencia" MaxLength="1024" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="CodRefPadre" MaxLength="1024" FixedLength="false" Unicode="false" />
+          <Property Type="DateTime" Name="Fecha" />
+        </EntityType>
+        <EntityType Name="UnidadDocumental">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="Titulo" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Nivel" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="CodigoReferencia" MaxLength="1024" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="CodRefPadre" MaxLength="1024" FixedLength="false" Unicode="false" />
+          <Property Type="DateTime" Name="Fecha" />
+          <Property Type="String" Name="VolumenSoporte" MaxLength="1024" FixedLength="false" Unicode="false" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="biblioDBModelStoreContainer" CdmEntityContainer="biblioDBEntities">
+          <EntitySetMapping Name="Fondos">
+            <EntityTypeMapping TypeName="biblioDBModel.Fondo">
+              <MappingFragment StoreEntitySet="Fondo">
+                <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+                <ScalarProperty Name="CodRefPadre" ColumnName="CodRefPadre" />
+                <ScalarProperty Name="CodigoReferencia" ColumnName="CodigoReferencia" />
+                <ScalarProperty Name="Nivel" ColumnName="Nivel" />
+                <ScalarProperty Name="Titulo" ColumnName="Titulo" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Series">
+            <EntityTypeMapping TypeName="biblioDBModel.Serie">
+              <MappingFragment StoreEntitySet="Serie">
+                <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+                <ScalarProperty Name="CodRefPadre" ColumnName="CodRefPadre" />
+                <ScalarProperty Name="CodigoReferencia" ColumnName="CodigoReferencia" />
+                <ScalarProperty Name="Nivel" ColumnName="Nivel" />
+                <ScalarProperty Name="Titulo" ColumnName="Titulo" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="UnidadesDocumentales">
+            <EntityTypeMapping TypeName="biblioDBModel.UnidadDocumental">
+              <MappingFragment StoreEntitySet="UnidadDocumental">
+                <ScalarProperty Name="VolumenSoporte" ColumnName="VolumenSoporte" />
+                <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+                <ScalarProperty Name="CodRefPadre" ColumnName="CodRefPadre" />
+                <ScalarProperty Name="CodigoReferencia" ColumnName="CodigoReferencia" />
+                <ScalarProperty Name="Nivel" ColumnName="Nivel" />
+                <ScalarProperty Name="Titulo" ColumnName="Titulo" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="False" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="ModeloBiblioDB">
+        <EntityTypeShape EntityType="biblioDBModel.Fondo" Width="1.5" PointX="0.5" PointY="0.5" Height="2.1725878906249996" />
+        <EntityTypeShape EntityType="biblioDBModel.Serie" Width="1.5" PointX="2.5" PointY="0.5" Height="2.1725878906249996" />
+        <EntityTypeShape EntityType="biblioDBModel.UnidadDocumental" Width="2.5" PointX="4.375" PointY="0.5" Height="2.3648893229166656" />
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

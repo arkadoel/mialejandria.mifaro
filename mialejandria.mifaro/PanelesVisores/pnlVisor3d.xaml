@@ -29,7 +29,7 @@
 
         </Grid>
         <Grid Margin="0,0,0,0" Name="grid1" Height="260" VerticalAlignment="Bottom">
-            <Image Margin="0,5,5,5" Stretch="Fill" Source="/mialejandria.mifaro;component/Images/wood-textures_00394149.jpg" Opacity="0.8" />
+            <Image Margin="0,5,3,5" Stretch="Fill" Source="/mialejandria.mifaro;component/Images/wood-textures_00394149.jpg" Opacity="0.8" />
             <ScrollViewer  VerticalScrollBarVisibility="Auto" Margin="3,3,10,3"   HorizontalScrollBarVisibility="Auto">
                 <StackPanel  Name="mesaDocumentos" Orientation="Horizontal">
 

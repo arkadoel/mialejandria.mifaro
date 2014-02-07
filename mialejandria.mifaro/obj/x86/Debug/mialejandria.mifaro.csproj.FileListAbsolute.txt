@@ -33,3 +33,10 @@ Z:\PROYECTOS\2014\mialejandria.mifaro\mialejandria.mifaro\obj\x86\Debug\Controle
 Z:\PROYECTOS\2014\mialejandria.mifaro\mialejandria.mifaro\obj\x86\Debug\Controles\pnlMenuLugar.g.cs
 Z:\PROYECTOS\2014\mialejandria.mifaro\mialejandria.mifaro\obj\x86\Debug\PanelesVisores\pnlVisor3d.g.cs
 Z:\PROYECTOS\2014\mialejandria.mifaro\mialejandria.mifaro\obj\x86\Debug\PanelesVisores\pnlVisor3d.baml
+Z:\PROYECTOS\2014\mialejandria.mifaro\mialejandria.mifaro\bin\Debug\mialejandria.mifaro.data.dll
+Z:\PROYECTOS\2014\mialejandria.mifaro\mialejandria.mifaro\bin\Debug\mialejandria.mifaro.data.pdb
+Z:\PROYECTOS\2014\mialejandria.mifaro\mialejandria.mifaro\bin\Debug\App.Config
+Z:\PROYECTOS\2014\mialejandria.mifaro\mialejandria.mifaro\bin\Debug\mialejandria.mifaro.exe.config
+Z:\PROYECTOS\2014\mialejandria.mifaro\mialejandria.mifaro\obj\x86\Debug\mialejandria.mifaro_Content.g.cs
+Z:\PROYECTOS\2014\mialejandria.mifaro\mialejandria.mifaro\obj\x86\Debug\PanelesVisores\pnlExplorador.baml
+Z:\PROYECTOS\2014\mialejandria.mifaro\mialejandria.mifaro\obj\x86\Debug\PanelesVisores\pnlExplorador.g.cs

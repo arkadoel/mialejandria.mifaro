@@ -89,6 +89,9 @@
     <Compile Include="muebles\Estanteria.xaml.cs">
       <DependentUpon>Estanteria.xaml</DependentUpon>
     </Compile>
+    <Compile Include="PanelesVisores\pnlExplorador.xaml.cs">
+      <DependentUpon>pnlExplorador.xaml</DependentUpon>
+    </Compile>
     <Compile Include="PanelesVisores\pnlVisor3d.xaml.cs">
       <DependentUpon>pnlVisor3d.xaml</DependentUpon>
     </Compile>
@@ -109,6 +112,9 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <Content Include="App.Config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -186,6 +192,10 @@
     <Page Include="muebles\Estanteria.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="PanelesVisores\pnlExplorador.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="PanelesVisores\pnlVisor3d.xaml">
       <SubType>Designer</SubType>

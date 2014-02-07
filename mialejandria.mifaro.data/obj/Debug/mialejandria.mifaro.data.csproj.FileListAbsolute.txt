@@ -6,3 +6,7 @@ Z:\PROYECTOS\2014\mialejandria.mifaro\mialejandria.mifaro.data\obj\Debug\Generat
 Z:\PROYECTOS\2014\mialejandria.mifaro\mialejandria.mifaro.data\obj\Debug\GenerateResource.write.1.tlog
 Z:\PROYECTOS\2014\mialejandria.mifaro\mialejandria.mifaro.data\obj\Debug\mialejandria.mifaro.data.dll
 Z:\PROYECTOS\2014\mialejandria.mifaro\mialejandria.mifaro.data\obj\Debug\mialejandria.mifaro.data.pdb
+Z:\PROYECTOS\2014\mialejandria.mifaro\mialejandria.mifaro.data\bin\Debug\MifaroLocalDB_log.ldf
+Z:\PROYECTOS\2014\mialejandria.mifaro\mialejandria.mifaro.data\bin\Debug\App.Config
+Z:\PROYECTOS\2014\mialejandria.mifaro\mialejandria.mifaro.data\bin\Debug\mialejandria.mifaro.data.dll.config
+Z:\PROYECTOS\2014\mialejandria.mifaro\mialejandria.mifaro.data\obj\Debug\mialejandria.mifaro.data.g.resources

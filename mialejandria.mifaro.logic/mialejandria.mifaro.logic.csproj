@@ -36,6 +36,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -50,6 +51,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Efectos.cs" />
+    <Compile Include="gestionBiblioDB.cs" />
+    <Compile Include="Licencia.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -64,10 +67,18 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <Compile Include="Util.cs" />
+    <Compile Include="VentanaLicencias.xaml.cs">
+      <DependentUpon>VentanaLicencias.xaml</DependentUpon>
+    </Compile>
+    <Resource Include="Images\LogoMiAlejandria.png" />
+    <Resource Include="Images\favicon.ico" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <Content Include="App.Config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -79,6 +90,12 @@
       <Project>{0DFFF745-ABC1-4F5D-869B-C6D862310319}</Project>
       <Name>mialejandria.mifaro.data</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="VentanaLicencias.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

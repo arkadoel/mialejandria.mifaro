@@ -6,3 +6,12 @@ Z:\PROYECTOS\2014\mialejandria.mifaro\mialejandria.mifaro.logic\obj\Debug\Genera
 Z:\PROYECTOS\2014\mialejandria.mifaro\mialejandria.mifaro.logic\obj\Debug\GenerateResource.write.1.tlog
 Z:\PROYECTOS\2014\mialejandria.mifaro\mialejandria.mifaro.logic\obj\Debug\mialejandria.mifaro.logic.dll
 Z:\PROYECTOS\2014\mialejandria.mifaro\mialejandria.mifaro.logic\obj\Debug\mialejandria.mifaro.logic.pdb
+Z:\PROYECTOS\2014\mialejandria.mifaro\mialejandria.mifaro.logic\bin\Debug\MifaroLocalDB_log.ldf
+Z:\PROYECTOS\2014\mialejandria.mifaro\mialejandria.mifaro.logic\bin\Debug\mialejandria.mifaro.data.dll
+Z:\PROYECTOS\2014\mialejandria.mifaro\mialejandria.mifaro.logic\bin\Debug\mialejandria.mifaro.data.pdb
+Z:\PROYECTOS\2014\mialejandria.mifaro\mialejandria.mifaro.logic\bin\Debug\App.Config
+Z:\PROYECTOS\2014\mialejandria.mifaro\mialejandria.mifaro.logic\bin\Debug\mialejandria.mifaro.logic.dll.config
+Z:\PROYECTOS\2014\mialejandria.mifaro\mialejandria.mifaro.logic\obj\Debug\VentanaLicencias.baml
+Z:\PROYECTOS\2014\mialejandria.mifaro\mialejandria.mifaro.logic\obj\Debug\VentanaLicencias.g.cs
+Z:\PROYECTOS\2014\mialejandria.mifaro\mialejandria.mifaro.logic\obj\Debug\mialejandria.mifaro.logic_MarkupCompile.cache
+Z:\PROYECTOS\2014\mialejandria.mifaro\mialejandria.mifaro.logic\obj\Debug\mialejandria.mifaro.logic.g.resources

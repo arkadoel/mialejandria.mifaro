@@ -21,7 +21,7 @@ namespace mialejandria.mifaro.Controles
     public partial class pnlMenuLugar : UserControl
     {
         private const int MIN_SIZE = 30;
-        private const int MAX_SIZE = 120;
+        private const int MAX_SIZE = 150;
         private DropShadowEffect sombra=null;
 
         public pnlMenuLugar()
@@ -34,13 +34,29 @@ namespace mialejandria.mifaro.Controles
             sombra.RenderingBias = RenderingBias.Performance;
 
             this.Height = MIN_SIZE;
+            initEventHandlers();
+        }
+
+        private void initEventHandlers()
+        {
             lblMiOrdenador.MouseEnter += logic.Efectos.Label_MouseEnter;
             lblMiOrdenador.MouseLeave += logic.Efectos.Label_MouseLeave;
             lblMiBiblioteca.MouseEnter += logic.Efectos.Label_MouseEnter;
             lblMiBiblioteca.MouseLeave += logic.Efectos.Label_MouseLeave;
+            lblBuscador.MouseEnter += logic.Efectos.Label_MouseEnter;
+            lblBuscador.MouseLeave += logic.Efectos.Label_MouseLeave;
 
             lblMiBiblioteca.MouseLeftButtonDown += new MouseButtonEventHandler(lblMiBiblioteca_MouseLeftButtonDown);
             lblMiOrdenador.MouseLeftButtonDown += new MouseButtonEventHandler(lblMiOrdenador_MouseLeftButtonDown);
+            lblBuscador.MouseLeftButtonDown += new MouseButtonEventHandler(lblBuscador_MouseLeftButtonDown);
+        }
+
+        void lblBuscador_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            logic.Efectos.MostrarOcultarMenu(this, MAX_SIZE, MIN_SIZE, sombra);
+            //Ver buscador
+            comun.PRINCIPAL.ZonaVisores.Children.Clear();
+
         }
 
         void lblMiOrdenador_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
