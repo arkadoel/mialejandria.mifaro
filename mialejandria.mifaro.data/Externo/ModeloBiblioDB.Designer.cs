@@ -68,6 +68,22 @@ namespace mialejandria.mifaro.data.Externo
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
+        public ObjectSet<Usuario> Usuarios
+        {
+            get
+            {
+                if ((_Usuarios == null))
+                {
+                    _Usuarios = base.CreateObjectSet<Usuario>("Usuarios");
+                }
+                return _Usuarios;
+            }
+        }
+        private ObjectSet<Usuario> _Usuarios;
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
         public ObjectSet<Fondo> Fondos
         {
             get
@@ -100,21 +116,77 @@ namespace mialejandria.mifaro.data.Externo
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
-        public ObjectSet<UnidadDocumental> UnidadesDocumentales
+        public ObjectSet<UnidadCompuesta> UnidadesCompuestas
         {
             get
             {
-                if ((_UnidadesDocumentales == null))
+                if ((_UnidadesCompuestas == null))
                 {
-                    _UnidadesDocumentales = base.CreateObjectSet<UnidadDocumental>("UnidadesDocumentales");
+                    _UnidadesCompuestas = base.CreateObjectSet<UnidadCompuesta>("UnidadesCompuestas");
                 }
-                return _UnidadesDocumentales;
+                return _UnidadesCompuestas;
             }
         }
-        private ObjectSet<UnidadDocumental> _UnidadesDocumentales;
+        private ObjectSet<UnidadCompuesta> _UnidadesCompuestas;
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        public ObjectSet<UnidadSimple> UnidadesSimples
+        {
+            get
+            {
+                if ((_UnidadesSimples == null))
+                {
+                    _UnidadesSimples = base.CreateObjectSet<UnidadSimple>("UnidadesSimples");
+                }
+                return _UnidadesSimples;
+            }
+        }
+        private ObjectSet<UnidadSimple> _UnidadesSimples;
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        public ObjectSet<DescripcionesUsuario> DescripcionesUsuarios
+        {
+            get
+            {
+                if ((_DescripcionesUsuarios == null))
+                {
+                    _DescripcionesUsuarios = base.CreateObjectSet<DescripcionesUsuario>("DescripcionesUsuarios");
+                }
+                return _DescripcionesUsuarios;
+            }
+        }
+        private ObjectSet<DescripcionesUsuario> _DescripcionesUsuarios;
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        public ObjectSet<EtiquetasUsuario> EtiquetasUsuarios
+        {
+            get
+            {
+                if ((_EtiquetasUsuarios == null))
+                {
+                    _EtiquetasUsuarios = base.CreateObjectSet<EtiquetasUsuario>("EtiquetasUsuarios");
+                }
+                return _EtiquetasUsuarios;
+            }
+        }
+        private ObjectSet<EtiquetasUsuario> _EtiquetasUsuarios;
 
         #endregion
         #region AddTo Methods
+    
+        /// <summary>
+        /// Deprecated Method for adding a new object to the Usuarios EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
+        /// </summary>
+        public void AddToUsuarios(Usuario usuario)
+        {
+            base.AddObject("Usuarios", usuario);
+        }
     
         /// <summary>
         /// Deprecated Method for adding a new object to the Fondos EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
@@ -133,11 +205,35 @@ namespace mialejandria.mifaro.data.Externo
         }
     
         /// <summary>
-        /// Deprecated Method for adding a new object to the UnidadesDocumentales EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
+        /// Deprecated Method for adding a new object to the UnidadesCompuestas EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
         /// </summary>
-        public void AddToUnidadesDocumentales(UnidadDocumental unidadDocumental)
+        public void AddToUnidadesCompuestas(UnidadCompuesta unidadCompuesta)
         {
-            base.AddObject("UnidadesDocumentales", unidadDocumental);
+            base.AddObject("UnidadesCompuestas", unidadCompuesta);
+        }
+    
+        /// <summary>
+        /// Deprecated Method for adding a new object to the UnidadesSimples EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
+        /// </summary>
+        public void AddToUnidadesSimples(UnidadSimple unidadSimple)
+        {
+            base.AddObject("UnidadesSimples", unidadSimple);
+        }
+    
+        /// <summary>
+        /// Deprecated Method for adding a new object to the DescripcionesUsuarios EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
+        /// </summary>
+        public void AddToDescripcionesUsuarios(DescripcionesUsuario descripcionesUsuario)
+        {
+            base.AddObject("DescripcionesUsuarios", descripcionesUsuario);
+        }
+    
+        /// <summary>
+        /// Deprecated Method for adding a new object to the EtiquetasUsuarios EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
+        /// </summary>
+        public void AddToEtiquetasUsuarios(EtiquetasUsuario etiquetasUsuario)
+        {
+            base.AddObject("EtiquetasUsuarios", etiquetasUsuario);
         }
 
         #endregion
@@ -147,6 +243,212 @@ namespace mialejandria.mifaro.data.Externo
     #endregion
     
     #region Entities
+    
+    /// <summary>
+    /// No Metadata Documentation available.
+    /// </summary>
+    [EdmEntityTypeAttribute(NamespaceName="biblioDBModel", Name="DescripcionesUsuario")]
+    [Serializable()]
+    [DataContractAttribute(IsReference=true)]
+    public partial class DescripcionesUsuario : EntityObject
+    {
+        #region Factory Method
+    
+        /// <summary>
+        /// Create a new DescripcionesUsuario object.
+        /// </summary>
+        /// <param name="iDUsuario">Initial value of the IDUsuario property.</param>
+        public static DescripcionesUsuario CreateDescripcionesUsuario(global::System.Int64 iDUsuario)
+        {
+            DescripcionesUsuario descripcionesUsuario = new DescripcionesUsuario();
+            descripcionesUsuario.IDUsuario = iDUsuario;
+            return descripcionesUsuario;
+        }
+
+        #endregion
+        #region Primitive Properties
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int64 IDUsuario
+        {
+            get
+            {
+                return _IDUsuario;
+            }
+            set
+            {
+                if (_IDUsuario != value)
+                {
+                    OnIDUsuarioChanging(value);
+                    ReportPropertyChanging("IDUsuario");
+                    _IDUsuario = StructuralObject.SetValidValue(value);
+                    ReportPropertyChanged("IDUsuario");
+                    OnIDUsuarioChanged();
+                }
+            }
+        }
+        private global::System.Int64 _IDUsuario;
+        partial void OnIDUsuarioChanging(global::System.Int64 value);
+        partial void OnIDUsuarioChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String Descripcion
+        {
+            get
+            {
+                return _Descripcion;
+            }
+            set
+            {
+                OnDescripcionChanging(value);
+                ReportPropertyChanging("Descripcion");
+                _Descripcion = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("Descripcion");
+                OnDescripcionChanged();
+            }
+        }
+        private global::System.String _Descripcion;
+        partial void OnDescripcionChanging(global::System.String value);
+        partial void OnDescripcionChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String CodunidadSimple
+        {
+            get
+            {
+                return _CodunidadSimple;
+            }
+            set
+            {
+                OnCodunidadSimpleChanging(value);
+                ReportPropertyChanging("CodunidadSimple");
+                _CodunidadSimple = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("CodunidadSimple");
+                OnCodunidadSimpleChanged();
+            }
+        }
+        private global::System.String _CodunidadSimple;
+        partial void OnCodunidadSimpleChanging(global::System.String value);
+        partial void OnCodunidadSimpleChanged();
+
+        #endregion
+    
+    }
+    
+    /// <summary>
+    /// No Metadata Documentation available.
+    /// </summary>
+    [EdmEntityTypeAttribute(NamespaceName="biblioDBModel", Name="EtiquetasUsuario")]
+    [Serializable()]
+    [DataContractAttribute(IsReference=true)]
+    public partial class EtiquetasUsuario : EntityObject
+    {
+        #region Factory Method
+    
+        /// <summary>
+        /// Create a new EtiquetasUsuario object.
+        /// </summary>
+        /// <param name="iDusuario">Initial value of the IDusuario property.</param>
+        public static EtiquetasUsuario CreateEtiquetasUsuario(global::System.Int64 iDusuario)
+        {
+            EtiquetasUsuario etiquetasUsuario = new EtiquetasUsuario();
+            etiquetasUsuario.IDusuario = iDusuario;
+            return etiquetasUsuario;
+        }
+
+        #endregion
+        #region Primitive Properties
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int64 IDusuario
+        {
+            get
+            {
+                return _IDusuario;
+            }
+            set
+            {
+                if (_IDusuario != value)
+                {
+                    OnIDusuarioChanging(value);
+                    ReportPropertyChanging("IDusuario");
+                    _IDusuario = StructuralObject.SetValidValue(value);
+                    ReportPropertyChanged("IDusuario");
+                    OnIDusuarioChanged();
+                }
+            }
+        }
+        private global::System.Int64 _IDusuario;
+        partial void OnIDusuarioChanging(global::System.Int64 value);
+        partial void OnIDusuarioChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String Etiqueta
+        {
+            get
+            {
+                return _Etiqueta;
+            }
+            set
+            {
+                OnEtiquetaChanging(value);
+                ReportPropertyChanging("Etiqueta");
+                _Etiqueta = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("Etiqueta");
+                OnEtiquetaChanged();
+            }
+        }
+        private global::System.String _Etiqueta;
+        partial void OnEtiquetaChanging(global::System.String value);
+        partial void OnEtiquetaChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String CodUnidadSimple
+        {
+            get
+            {
+                return _CodUnidadSimple;
+            }
+            set
+            {
+                OnCodUnidadSimpleChanging(value);
+                ReportPropertyChanging("CodUnidadSimple");
+                _CodUnidadSimple = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("CodUnidadSimple");
+                OnCodUnidadSimpleChanged();
+            }
+        }
+        private global::System.String _CodUnidadSimple;
+        partial void OnCodUnidadSimpleChanging(global::System.String value);
+        partial void OnCodUnidadSimpleChanged();
+
+        #endregion
+    
+    }
     
     /// <summary>
     /// No Metadata Documentation available.
@@ -318,6 +620,30 @@ namespace mialejandria.mifaro.data.Externo
         private Nullable<global::System.DateTime> _Fecha;
         partial void OnFechaChanging(Nullable<global::System.DateTime> value);
         partial void OnFechaChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String TipoObjeto
+        {
+            get
+            {
+                return _TipoObjeto;
+            }
+            set
+            {
+                OnTipoObjetoChanging(value);
+                ReportPropertyChanging("TipoObjeto");
+                _TipoObjeto = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("TipoObjeto");
+                OnTipoObjetoChanged();
+            }
+        }
+        private global::System.String _TipoObjeto;
+        partial void OnTipoObjetoChanging(global::System.String value);
+        partial void OnTipoObjetoChanged();
 
         #endregion
     
@@ -493,6 +819,30 @@ namespace mialejandria.mifaro.data.Externo
         private Nullable<global::System.DateTime> _Fecha;
         partial void OnFechaChanging(Nullable<global::System.DateTime> value);
         partial void OnFechaChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String TipoObjeto
+        {
+            get
+            {
+                return _TipoObjeto;
+            }
+            set
+            {
+                OnTipoObjetoChanging(value);
+                ReportPropertyChanging("TipoObjeto");
+                _TipoObjeto = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("TipoObjeto");
+                OnTipoObjetoChanged();
+            }
+        }
+        private global::System.String _TipoObjeto;
+        partial void OnTipoObjetoChanging(global::System.String value);
+        partial void OnTipoObjetoChanged();
 
         #endregion
     
@@ -501,22 +851,22 @@ namespace mialejandria.mifaro.data.Externo
     /// <summary>
     /// No Metadata Documentation available.
     /// </summary>
-    [EdmEntityTypeAttribute(NamespaceName="biblioDBModel", Name="UnidadDocumental")]
+    [EdmEntityTypeAttribute(NamespaceName="biblioDBModel", Name="UnidadCompuesta")]
     [Serializable()]
     [DataContractAttribute(IsReference=true)]
-    public partial class UnidadDocumental : EntityObject
+    public partial class UnidadCompuesta : EntityObject
     {
         #region Factory Method
     
         /// <summary>
-        /// Create a new UnidadDocumental object.
+        /// Create a new UnidadCompuesta object.
         /// </summary>
         /// <param name="id">Initial value of the ID property.</param>
-        public static UnidadDocumental CreateUnidadDocumental(global::System.Int32 id)
+        public static UnidadCompuesta CreateUnidadCompuesta(global::System.Int32 id)
         {
-            UnidadDocumental unidadDocumental = new UnidadDocumental();
-            unidadDocumental.ID = id;
-            return unidadDocumental;
+            UnidadCompuesta unidadCompuesta = new UnidadCompuesta();
+            unidadCompuesta.ID = id;
+            return unidadCompuesta;
         }
 
         #endregion
@@ -674,6 +1024,205 @@ namespace mialejandria.mifaro.data.Externo
         /// </summary>
         [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
         [DataMemberAttribute()]
+        public global::System.String TipoObjeto
+        {
+            get
+            {
+                return _TipoObjeto;
+            }
+            set
+            {
+                OnTipoObjetoChanging(value);
+                ReportPropertyChanging("TipoObjeto");
+                _TipoObjeto = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("TipoObjeto");
+                OnTipoObjetoChanged();
+            }
+        }
+        private global::System.String _TipoObjeto;
+        partial void OnTipoObjetoChanging(global::System.String value);
+        partial void OnTipoObjetoChanged();
+
+        #endregion
+    
+    }
+    
+    /// <summary>
+    /// No Metadata Documentation available.
+    /// </summary>
+    [EdmEntityTypeAttribute(NamespaceName="biblioDBModel", Name="UnidadSimple")]
+    [Serializable()]
+    [DataContractAttribute(IsReference=true)]
+    public partial class UnidadSimple : EntityObject
+    {
+        #region Factory Method
+    
+        /// <summary>
+        /// Create a new UnidadSimple object.
+        /// </summary>
+        /// <param name="iDunidadSimple">Initial value of the IDunidadSimple property.</param>
+        public static UnidadSimple CreateUnidadSimple(global::System.Int64 iDunidadSimple)
+        {
+            UnidadSimple unidadSimple = new UnidadSimple();
+            unidadSimple.IDunidadSimple = iDunidadSimple;
+            return unidadSimple;
+        }
+
+        #endregion
+        #region Primitive Properties
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int64 IDunidadSimple
+        {
+            get
+            {
+                return _IDunidadSimple;
+            }
+            set
+            {
+                if (_IDunidadSimple != value)
+                {
+                    OnIDunidadSimpleChanging(value);
+                    ReportPropertyChanging("IDunidadSimple");
+                    _IDunidadSimple = StructuralObject.SetValidValue(value);
+                    ReportPropertyChanged("IDunidadSimple");
+                    OnIDunidadSimpleChanged();
+                }
+            }
+        }
+        private global::System.Int64 _IDunidadSimple;
+        partial void OnIDunidadSimpleChanging(global::System.Int64 value);
+        partial void OnIDunidadSimpleChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String Titulo
+        {
+            get
+            {
+                return _Titulo;
+            }
+            set
+            {
+                OnTituloChanging(value);
+                ReportPropertyChanging("Titulo");
+                _Titulo = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("Titulo");
+                OnTituloChanged();
+            }
+        }
+        private global::System.String _Titulo;
+        partial void OnTituloChanging(global::System.String value);
+        partial void OnTituloChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String Nivel
+        {
+            get
+            {
+                return _Nivel;
+            }
+            set
+            {
+                OnNivelChanging(value);
+                ReportPropertyChanging("Nivel");
+                _Nivel = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("Nivel");
+                OnNivelChanged();
+            }
+        }
+        private global::System.String _Nivel;
+        partial void OnNivelChanging(global::System.String value);
+        partial void OnNivelChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String CodigoReferencia
+        {
+            get
+            {
+                return _CodigoReferencia;
+            }
+            set
+            {
+                OnCodigoReferenciaChanging(value);
+                ReportPropertyChanging("CodigoReferencia");
+                _CodigoReferencia = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("CodigoReferencia");
+                OnCodigoReferenciaChanged();
+            }
+        }
+        private global::System.String _CodigoReferencia;
+        partial void OnCodigoReferenciaChanging(global::System.String value);
+        partial void OnCodigoReferenciaChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String CodRefPadre
+        {
+            get
+            {
+                return _CodRefPadre;
+            }
+            set
+            {
+                OnCodRefPadreChanging(value);
+                ReportPropertyChanging("CodRefPadre");
+                _CodRefPadre = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("CodRefPadre");
+                OnCodRefPadreChanged();
+            }
+        }
+        private global::System.String _CodRefPadre;
+        partial void OnCodRefPadreChanging(global::System.String value);
+        partial void OnCodRefPadreChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.DateTime> Fecha
+        {
+            get
+            {
+                return _Fecha;
+            }
+            set
+            {
+                OnFechaChanging(value);
+                ReportPropertyChanging("Fecha");
+                _Fecha = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("Fecha");
+                OnFechaChanged();
+            }
+        }
+        private Nullable<global::System.DateTime> _Fecha;
+        partial void OnFechaChanging(Nullable<global::System.DateTime> value);
+        partial void OnFechaChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
         public global::System.String VolumenSoporte
         {
             get
@@ -692,6 +1241,109 @@ namespace mialejandria.mifaro.data.Externo
         private global::System.String _VolumenSoporte;
         partial void OnVolumenSoporteChanging(global::System.String value);
         partial void OnVolumenSoporteChanged();
+
+        #endregion
+    
+    }
+    
+    /// <summary>
+    /// No Metadata Documentation available.
+    /// </summary>
+    [EdmEntityTypeAttribute(NamespaceName="biblioDBModel", Name="Usuario")]
+    [Serializable()]
+    [DataContractAttribute(IsReference=true)]
+    public partial class Usuario : EntityObject
+    {
+        #region Factory Method
+    
+        /// <summary>
+        /// Create a new Usuario object.
+        /// </summary>
+        /// <param name="id">Initial value of the ID property.</param>
+        public static Usuario CreateUsuario(global::System.Int64 id)
+        {
+            Usuario usuario = new Usuario();
+            usuario.ID = id;
+            return usuario;
+        }
+
+        #endregion
+        #region Primitive Properties
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int64 ID
+        {
+            get
+            {
+                return _ID;
+            }
+            set
+            {
+                if (_ID != value)
+                {
+                    OnIDChanging(value);
+                    ReportPropertyChanging("ID");
+                    _ID = StructuralObject.SetValidValue(value);
+                    ReportPropertyChanged("ID");
+                    OnIDChanged();
+                }
+            }
+        }
+        private global::System.Int64 _ID;
+        partial void OnIDChanging(global::System.Int64 value);
+        partial void OnIDChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String nombreUsuario
+        {
+            get
+            {
+                return _nombreUsuario;
+            }
+            set
+            {
+                OnnombreUsuarioChanging(value);
+                ReportPropertyChanging("nombreUsuario");
+                _nombreUsuario = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("nombreUsuario");
+                OnnombreUsuarioChanged();
+            }
+        }
+        private global::System.String _nombreUsuario;
+        partial void OnnombreUsuarioChanging(global::System.String value);
+        partial void OnnombreUsuarioChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String NombreReal
+        {
+            get
+            {
+                return _NombreReal;
+            }
+            set
+            {
+                OnNombreRealChanging(value);
+                ReportPropertyChanging("NombreReal");
+                _NombreReal = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("NombreReal");
+                OnNombreRealChanged();
+            }
+        }
+        private global::System.String _NombreReal;
+        partial void OnNombreRealChanging(global::System.String value);
+        partial void OnNombreRealChanged();
 
         #endregion
     

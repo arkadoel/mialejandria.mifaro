@@ -17,6 +17,6 @@
        
         
         <my:pnlMenuLugar Height="30" HorizontalAlignment="Left" Margin="8,30,0,0" x:Name="pnlMenuLugar1" VerticalAlignment="Top" Width="160" />
-    
+        <Label Content="Tu opinión importa, escribenos." FontWeight="Light" FontFamily="Verdana" MouseLeftButtonDown="lblDarOpinion_MouseLeftButtonDown" HorizontalContentAlignment="Center" FontSize="11" Foreground="DimGray" Height="24" HorizontalAlignment="Right" Margin="0,0,87,0" Name="lblDarOpinion" VerticalAlignment="Top" Width="190" Background="#3F147DCD" />
     </Grid>
 </Window>

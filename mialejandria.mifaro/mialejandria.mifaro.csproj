@@ -39,8 +39,14 @@
     <ApplicationIcon>Images\favicon.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AxInterop.AcroPDFLib">
+      <HintPath>..\..\..\..\Documents\Visual Studio 2010\Projects\2013\Diseños\Diseños\bin\Debug\AxInterop.AcroPDFLib.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -49,9 +55,11 @@
     <Reference Include="System.Xaml">
       <RequiredTargetFramework>4.0</RequiredTargetFramework>
     </Reference>
+    <Reference Include="UIAutomationProvider" />
     <Reference Include="WindowsBase" />
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
+    <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
@@ -61,6 +69,24 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PanelesVisores\pnlConfiguracion.xaml.cs">
+      <DependentUpon>pnlConfiguracion.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PanelesVisores\pnlDarOpinion.xaml.cs">
+      <DependentUpon>pnlDarOpinion.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="VisoresDocumentos\VentanaDocumentos.xaml.cs">
+      <DependentUpon>VentanaDocumentos.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="VisoresDocumentos\visorPDF.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="VisoresDocumentos\visorPDF.designer.cs">
+      <DependentUpon>visorPDF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VisoresDocumentos\VisorPdfWpf.xaml.cs">
+      <DependentUpon>VisorPdfWpf.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -92,6 +118,9 @@
     <Compile Include="PanelesVisores\pnlExplorador.xaml.cs">
       <DependentUpon>pnlExplorador.xaml</DependentUpon>
     </Compile>
+    <Compile Include="PanelesVisores\pnlVerFondoSeries.xaml.cs">
+      <DependentUpon>pnlVerFondoSeries.xaml</DependentUpon>
+    </Compile>
     <Compile Include="PanelesVisores\pnlVisor3d.xaml.cs">
       <DependentUpon>pnlVisor3d.xaml</DependentUpon>
     </Compile>
@@ -108,6 +137,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Resource Include="Images\Very-Basic-Settings-icon.png" />
+    <Resource Include="Images\System-Save-icon.png" />
+    <EmbeddedResource Include="VisoresDocumentos\visorPDF.resx">
+      <DependentUpon>visorPDF.cs</DependentUpon>
+    </EmbeddedResource>
+    <Resource Include="Images\Touristic-Museum-icon.png" />
+    <Resource Include="Images\Maps-and-Geolocation-World-map-icon.png" />
+    <Resource Include="Images\Industry-Factory-icon.png" />
+    <Resource Include="Images\Business-Organization-icon.png" />
+    <Resource Include="Images\archivador.png" />
+    <Resource Include="Images\Accommodation-Apartment-icon.png" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -193,7 +233,19 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="PanelesVisores\pnlConfiguracion.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PanelesVisores\pnlDarOpinion.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="PanelesVisores\pnlExplorador.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PanelesVisores\pnlVerFondoSeries.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -201,9 +253,58 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="VisoresDocumentos\VentanaDocumentos.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="VisoresDocumentos\VisorPdfWpf.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
+    <COMReference Include="Acrobat">
+      <Guid>{E64169B3-3592-47D2-816E-602C5C13F328}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>1</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="AcrobatAccessLib">
+      <Guid>{C523F390-9C83-11D3-9094-00104BD0D535}</Guid>
+      <VersionMajor>3</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="AcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="FileViewLib">
+      <Guid>{BE79C475-D632-4A57-91B3-DA044FA27CDA}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\mialejandria.mifaro.data\mialejandria.mifaro.data.csproj">
+      <Project>{0DFFF745-ABC1-4F5D-869B-C6D862310319}</Project>
+      <Name>mialejandria.mifaro.data</Name>
+    </ProjectReference>
     <ProjectReference Include="..\mialejandria.mifaro.debug\mialejandria.mifaro.debug.csproj">
       <Project>{FAE1D1B0-F6E1-4D56-B61D-E4175F466BF9}</Project>
       <Name>mialejandria.mifaro.debug</Name>

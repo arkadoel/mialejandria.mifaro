@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="biblioDBModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="biblioDBModelStoreContainer">
+    <EntitySet Name="Fondo" EntityType="biblioDBModel.Store.Fondo" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Serie" EntityType="biblioDBModel.Store.Serie" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UnidadCompuesta" EntityType="biblioDBModel.Store.UnidadCompuesta" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UnidadSimple" EntityType="biblioDBModel.Store.UnidadSimple" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Usuario" EntityType="biblioDBModel.Store.Usuario" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="Fondo">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Titulo" Type="varchar" MaxLength="1024" />
+    <Property Name="Nivel" Type="varchar" MaxLength="50" />
+    <Property Name="CodigoReferencia" Type="varchar" MaxLength="1024" />
+    <Property Name="CodRefPadre" Type="varchar" MaxLength="1024" />
+    <Property Name="Fecha" Type="datetime" />
+    <Property Name="TipoObjeto" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Serie">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Titulo" Type="varchar" MaxLength="1024" />
+    <Property Name="Nivel" Type="varchar" MaxLength="50" />
+    <Property Name="CodigoReferencia" Type="varchar" MaxLength="1024" />
+    <Property Name="CodRefPadre" Type="varchar" MaxLength="1024" />
+    <Property Name="Fecha" Type="datetime" />
+    <Property Name="TipoObjeto" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="UnidadCompuesta">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Titulo" Type="varchar" MaxLength="1024" />
+    <Property Name="Nivel" Type="varchar" MaxLength="50" />
+    <Property Name="CodigoReferencia" Type="varchar" MaxLength="1024" />
+    <Property Name="CodRefPadre" Type="varchar" MaxLength="1024" />
+    <Property Name="Fecha" Type="datetime" />
+    <Property Name="TipoObjeto" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="UnidadSimple">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Titulo" Type="varchar" MaxLength="1024" />
+    <Property Name="Nivel" Type="varchar" MaxLength="50" />
+    <Property Name="CodigoReferencia" Type="varchar" MaxLength="1024" />
+    <Property Name="CodRefPadre" Type="varchar" MaxLength="1024" />
+    <Property Name="Fecha" Type="datetime" />
+    <Property Name="VolumenSoporte" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Usuario">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="nombreUsuario" Type="varchar" MaxLength="1024" />
+    <Property Name="NombreReal" Type="varchar" MaxLength="1024" />
+  </EntityType>
+</Schema>

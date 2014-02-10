@@ -1,0 +1,25 @@
+﻿<UserControl x:Class="mialejandria.mifaro.PanelesVisores.pnlConfiguracion"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="400" d:DesignWidth="500">
+    <Grid Margin="0">
+        <Image Height="200" HorizontalAlignment="Left" Opacity="0.1" Margin="12,0,0,12" Name="image1" Stretch="Fill" VerticalAlignment="Bottom" Width="200" Source="/mialejandria.mifaro;component/Images/Very-Basic-Settings-icon.png" />
+        <Image Height="200" HorizontalAlignment="Left" Opacity="0.1" Margin="178,0,0,45" Stretch="Fill" VerticalAlignment="Bottom" Width="200" Source="/mialejandria.mifaro;component/Images/Very-Basic-Settings-icon.png" />
+        <Label Content="Nombre de usuario:" FontWeight="Heavy" Height="28" HorizontalAlignment="Left" Margin="20,51,0,0"  VerticalAlignment="Top" />
+        <Label Content="Email:" Height="28" FontWeight="Heavy" HorizontalAlignment="Left" Margin="20,81,0,0"  VerticalAlignment="Top" />
+        <TextBox Height="23" HorizontalAlignment="Left" BorderBrush="Black" BorderThickness="2" Margin="210,52,0,0" Name="txtNombre" VerticalAlignment="Top" Width="194" />
+        <TextBox BorderBrush="Black" BorderThickness="2" Height="23" HorizontalAlignment="Left" Margin="210,86,0,0" Name="txtEmail" VerticalAlignment="Top" Width="194" />
+        <Image Height="38" HorizontalAlignment="Right" Margin="0,0,29,26" Name="btnGuardar" MouseLeftButtonDown="btnGuardar_MouseLeftButtonDown" Stretch="Fill" VerticalAlignment="Bottom" Width="43" Source="/mialejandria.mifaro;component/Images/System-Save-icon.png" >
+            <Image.Effect>
+                <DropShadowEffect ShadowDepth="2" RenderingBias="Performance"  BlurRadius="5" Direction="5" />
+            </Image.Effect>
+        </Image>
+        <Label Content="Ruta biblioteca:" FontWeight="Heavy" Height="28" HorizontalAlignment="Left" Margin="20,110,0,0" VerticalAlignment="Top" />
+        <TextBox BorderBrush="Black" BorderThickness="2" Height="23" HorizontalAlignment="Left" Margin="210,115,0,0" Name="txtRutaBiblio" VerticalAlignment="Top" Width="194" />
+        <Label Content="Configuraciones" Foreground="DimGray" FontSize="18"  FontWeight="Heavy" Height="36" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="233" />
+        
+    </Grid>
+</UserControl>

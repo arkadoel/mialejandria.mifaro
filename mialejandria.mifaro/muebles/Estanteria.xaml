@@ -8,23 +8,23 @@
 	 Background="{x:Null}" Loaded="Page_Loaded" Margin="5cm,0,0,0">
 
     <Grid Background="{x:Null}" >
-        <WrapPanel Margin="20,20,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="38cm" Width="44cm" Name="grid1" Background="White">
-            <StackPanel Orientation="Horizontal" Height="8.5cm" HorizontalAlignment="Left" Margin="0.5cm" Background="#FF515151" Name="hueco1" VerticalAlignment="Top" Width="10cm" />
-            <StackPanel Orientation="Horizontal" Height="8.5cm" HorizontalAlignment="Left" Margin="0.5cm" Background="#FF515151"  VerticalAlignment="Top" Width="10cm" />
-            <StackPanel Orientation="Horizontal" Height="8.5cm" HorizontalAlignment="Left" Margin="0.5cm" Background="#FF515151"  VerticalAlignment="Top" Width="10cm" />
-            <StackPanel Orientation="Horizontal" Height="8.5cm" HorizontalAlignment="Left" Margin="0.5cm" Background="#FF515151"  VerticalAlignment="Top" Width="10cm" />
-            <StackPanel Orientation="Horizontal" Height="8.5cm" HorizontalAlignment="Left" Margin="0.5cm" Background="#FF515151"  VerticalAlignment="Top" Width="10cm" />
-            <StackPanel Orientation="Horizontal" Height="8.5cm" HorizontalAlignment="Left" Margin="0.5cm" Background="#FF515151"  VerticalAlignment="Top" Width="10cm" />
-            <StackPanel Orientation="Horizontal" Height="8.5cm" HorizontalAlignment="Left" Margin="0.5cm" Background="#FF515151"  VerticalAlignment="Top" Width="10cm" />
-            <StackPanel Orientation="Horizontal" Height="8.5cm" HorizontalAlignment="Left" Margin="0.5cm" Background="#FF515151"  VerticalAlignment="Top" Width="10cm" />
-            <StackPanel Orientation="Horizontal" Height="8.5cm" HorizontalAlignment="Left" Margin="0.5cm" Background="#FF515151"  VerticalAlignment="Top" Width="10cm" />
-            <StackPanel Orientation="Horizontal" Height="8.5cm" HorizontalAlignment="Left" Margin="0.5cm" Background="#FF515151"  VerticalAlignment="Top" Width="10cm" />
-            <StackPanel Orientation="Horizontal" Height="8.5cm" HorizontalAlignment="Left" Margin="0.5cm" Background="#FF515151"  VerticalAlignment="Top" Width="10cm" />
-            <StackPanel Orientation="Horizontal" Height="8.5cm" HorizontalAlignment="Left" Margin="0.5cm" Background="#FF515151"  VerticalAlignment="Top" Width="10cm" />
-            <StackPanel Orientation="Horizontal" Height="8.5cm" HorizontalAlignment="Left" Margin="0.5cm" Background="#FF515151"  VerticalAlignment="Top" Width="10cm" />
-            <StackPanel Orientation="Horizontal" Height="8.5cm" HorizontalAlignment="Left" Margin="0.5cm" Background="#FF515151"  VerticalAlignment="Top" Width="10cm" />
-            <StackPanel Orientation="Horizontal" Height="8.5cm" HorizontalAlignment="Left" Margin="0.5cm" Background="#FF515151"  VerticalAlignment="Top" Width="10cm" />
-            <StackPanel Orientation="Horizontal" Height="8.5cm" HorizontalAlignment="Left" Margin="0.5cm" Background="#FF515151"  VerticalAlignment="Top" Width="10cm" />
+        <WrapPanel Margin="20,20,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="38cm" Width="44cm" Name="gridHuecos" Background="White">
+            <StackPanel Orientation="Horizontal" Tag="1.1" Height="8.5cm" HorizontalAlignment="Left" Margin="0.5cm" Background="#FF515151" Name="hueco1" VerticalAlignment="Top" Width="10cm" />
+            <StackPanel Orientation="Horizontal" Tag="1.2" Height="8.5cm" HorizontalAlignment="Left" Margin="0.5cm" Background="#FF515151"  VerticalAlignment="Top" Width="10cm" />
+            <StackPanel Orientation="Horizontal" Tag="1.3" Height="8.5cm" HorizontalAlignment="Left" Margin="0.5cm" Background="#FF515151"  VerticalAlignment="Top" Width="10cm" />
+            <StackPanel Orientation="Horizontal" Tag="1.4" Height="8.5cm" HorizontalAlignment="Left" Margin="0.5cm" Background="#FF515151"  VerticalAlignment="Top" Width="10cm" />
+            <StackPanel Orientation="Horizontal" Tag="2.1" Height="8.5cm" HorizontalAlignment="Left" Margin="0.5cm" Background="#FF515151"  VerticalAlignment="Top" Width="10cm" />
+            <StackPanel Orientation="Horizontal" Tag="2.2" Height="8.5cm" HorizontalAlignment="Left" Margin="0.5cm" Background="#FF515151"  VerticalAlignment="Top" Width="10cm" />
+            <StackPanel Orientation="Horizontal" Tag="2.3" Height="8.5cm" HorizontalAlignment="Left" Margin="0.5cm" Background="#FF515151"  VerticalAlignment="Top" Width="10cm" />
+            <StackPanel Orientation="Horizontal" Tag="2.4" Height="8.5cm" HorizontalAlignment="Left" Margin="0.5cm" Background="#FF515151"  VerticalAlignment="Top" Width="10cm" />
+            <StackPanel Orientation="Horizontal" Tag="3.1" Height="8.5cm" HorizontalAlignment="Left" Margin="0.5cm" Background="#FF515151"  VerticalAlignment="Top" Width="10cm" />
+            <StackPanel Orientation="Horizontal" Tag="3.2" Height="8.5cm" HorizontalAlignment="Left" Margin="0.5cm" Background="#FF515151"  VerticalAlignment="Top" Width="10cm" />
+            <StackPanel Orientation="Horizontal" Tag="3.3" Height="8.5cm" HorizontalAlignment="Left" Margin="0.5cm" Background="#FF515151"  VerticalAlignment="Top" Width="10cm" />
+            <StackPanel Orientation="Horizontal" Tag="3.4" Height="8.5cm" HorizontalAlignment="Left" Margin="0.5cm" Background="#FF515151"  VerticalAlignment="Top" Width="10cm" />
+            <StackPanel Orientation="Horizontal" Tag="4.1" Height="8.5cm" HorizontalAlignment="Left" Margin="0.5cm" Background="#FF515151"  VerticalAlignment="Top" Width="10cm" />
+            <StackPanel Orientation="Horizontal" Tag="4.2" Height="8.5cm" HorizontalAlignment="Left" Margin="0.5cm" Background="#FF515151"  VerticalAlignment="Top" Width="10cm" />
+            <StackPanel Orientation="Horizontal" Tag="4.3" Height="8.5cm" HorizontalAlignment="Left" Margin="0.5cm" Background="#FF515151"  VerticalAlignment="Top" Width="10cm" />
+            <StackPanel Orientation="Horizontal" Tag="4.4" Height="8.5cm" HorizontalAlignment="Left" Margin="0.5cm" Background="#FF515151"  VerticalAlignment="Top" Width="10cm" />
             
         </WrapPanel>
     </Grid>

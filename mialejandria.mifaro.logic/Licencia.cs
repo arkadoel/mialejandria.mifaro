@@ -33,7 +33,7 @@ namespace mialejandria.mifaro.logic
                      * debe aparecer un formulario para poder pedir otra licencia o 
                      * actualizar
                      */
-                    new logic.VentanaLicencias().Show();
+                   //new logic.VentanaLicencias().Show();
                 }
 
                 fecha = fecha.AddMonths(VIGENCIA_TRAS_CADUCIDAD);

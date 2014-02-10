@@ -63,5 +63,11 @@ namespace mialejandria.mifaro
         }
 
         #endregion
+
+        private void lblDarOpinion_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            comun.PRINCIPAL.ZonaVisores.Children.Clear();
+            comun.PRINCIPAL.ZonaVisores.Children.Add(new PanelesVisores.pnlDarOpinion());
+        }
     }
 }

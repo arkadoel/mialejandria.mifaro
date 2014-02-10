@@ -26,47 +26,53 @@ namespace mialejandria.mifaro.muebles
         public Estanteria()
         {
             InitializeComponent();
-            CodigoEstanteria = "ES.1231321.GES99.RECSI.1.2.123.32.1.2.";
         }
 
         private void Page_Loaded(object sender, RoutedEventArgs e)
         {
-            /*muebles.Carpesano carpesan = null;
+            List<data.Externo.UnidadCompuesta> unidades = logic.Archivistica.getUnidadesCompuestas(CodigoEstanteria);
+
+            foreach (var unidad in unidades)
+            {
+                if (unidad.TipoObjeto == logic.gestionBiblioDB.TIPO_OBJETO.CARPESANO)
+                {
+                    muebles.Carpesano carpesan = new muebles.Carpesano();
+                    carpesan.CodigoEstante = unidad.CodigoReferencia;
+                    carpesan.MouseDoubleClick += new MouseButtonEventHandler(carpesan_MouseDoubleClick);
+
+                    string coordenadas = unidad.CodRefPadre.Replace(this.CodigoEstanteria, "").ToString();
+                    int ejeX = Convert.ToInt32( coordenadas[1].ToString());
+                    int ejeY = Convert.ToInt32(coordenadas[3].ToString());
+                    string huecoord = ejeX + "." + ejeY;
+
+
+                    var hueco = from StackPanel u in gridHuecos.Children
+                                where u.Tag.ToString().Contains(huecoord) == true
+                                select u;
+
+                    if (hueco.Count() > 0)
+                    {
+                        hueco.First<StackPanel>().Children.Add(carpesan);
+                    }
+
+                    logic.Util.DoEvents(this.Dispatcher);
+                }
+            }
             
-            //carpesano 1
-                carpesan = new muebles.Carpesano();
-                carpesan.CodigoEstante = CodigoEstanteria+ "1.";
-                carpesan.MouseDoubleClick += new MouseButtonEventHandler(carpesan_MouseDoubleClick);
-                hueco1.Children.Add(carpesan);
-                comun.DoEvents(this.Dispatcher);
-
-                //carpesano 3
-                carpesan = new muebles.Carpesano();
-                carpesan.CodigoEstante = CodigoEstanteria + "3.";
-                carpesan.MouseDoubleClick += new MouseButtonEventHandler(carpesan_MouseDoubleClick);
-                hueco1.Children.Add(carpesan);
-                comun.DoEvents(this.Dispatcher);
-
-                //carpesano 5
-                carpesan = new muebles.Carpesano();
-                carpesan.CodigoEstante = CodigoEstanteria + "5.";
-                carpesan.MouseDoubleClick += new MouseButtonEventHandler(carpesan_MouseDoubleClick);
-                hueco1.Children.Add(carpesan);
-                comun.DoEvents(this.Dispatcher);
-            */
         }
 
         void carpesan_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
             //Ver los documentos de la carpeta en la mesa
-            /*Carpesano c = sender as Carpesano;
-            string ruta = comun.rutaBiblio +  c.CodigoEstante.Replace(".","\\");
-            List<FileInfo> ficheros = mifaro.logic.util.ListarFicheros(ruta);
+            Carpesano c = sender as Carpesano;
+            string ruta = logic.gestionBiblioDB.getRutaBiblioteca() + "\\" + c.CodigoEstante.Replace(".", "\\");
+            List<FileInfo> ficheros = mifaro.logic.Util.ListarFicheros(ruta);
 
 
-            comun.vPrincipal.mesaDocumentos.Children.Clear();
+            comun.Visor3D.mesaDocumentos.Children.Clear();
             foreach (FileInfo documento in ficheros)
             {
+                
                 Diseños.VisorPdfWpf vi = new Diseños.VisorPdfWpf(documento.FullName);
                 /*
                 visorPDF v = new visorPDF();
@@ -75,10 +81,10 @@ namespace mialejandria.mifaro.muebles
                 vi.Height=220;
                 vi.Width =170;
                 */
-                //comun.vPrincipal.mesaDocumentos.Children.Add(vi);
-                //comun.DoEvents(this.Dispatcher);
+                comun.Visor3D.mesaDocumentos.Children.Add(vi);
+                logic.Util.DoEvents(this.Dispatcher);
             }
-         
+
         }
-    
+    }
 }

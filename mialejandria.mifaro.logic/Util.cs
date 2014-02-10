@@ -8,6 +8,7 @@ using System.IO;
 
 namespace mialejandria.mifaro.logic
 {
+
     public class Util
     {
         /// <summary>

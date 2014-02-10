@@ -4,7 +4,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              mc:Ignorable="d" 
-            Height="150" Width="152">
+            Height="180" Width="152">
     <Grid>
         <Rectangle Fill="#FFD6D6F5" Margin="0" RadiusX="5" RadiusY="5" >
         </Rectangle>
@@ -12,10 +12,12 @@
         <Label Content="Mi Ordenador" FontSize="14" Foreground="#FF2B2B2B" Height="28" HorizontalAlignment="Left" Margin="43,47,0,0" Name="lblMiOrdenador" VerticalAlignment="Top" />
         <Label Content="Mis Bibliotecas" FontSize="14" Foreground="#FF2B2B2B" Height="28" HorizontalAlignment="Left" Margin="43,77,0,0" Name="lblMiBiblioteca" VerticalAlignment="Top" />
         <Label Content="Buscador" FontSize="14" Foreground="#FF2B2B2B" Height="28" HorizontalAlignment="Left" Margin="43,107,0,0" Name="lblBuscador" VerticalAlignment="Top" />
+        <Label Content="Configuracion" FontSize="14" Foreground="#FF2B2B2B" Height="28" HorizontalAlignment="Left" Margin="43,137,0,0" Name="lblConfiguracion" VerticalAlignment="Top" />
 
         <Image Height="24" HorizontalAlignment="Left" Margin="18,49,0,0" Name="image3" Stretch="Fill" VerticalAlignment="Top" Width="24" Source="/mialejandria.mifaro;component/Images/pc.png" />
         <Image Height="24" HorizontalAlignment="Left" Margin="18,79,0,0" Stretch="Fill" VerticalAlignment="Top" Width="24" Source="/mialejandria.mifaro;component/Images/discoRED.png" />
         <Image Height="24" HorizontalAlignment="Left" Margin="18,109,0,0" Stretch="Fill" VerticalAlignment="Top" Width="24" Source="/mialejandria.mifaro;component/Images/Maps-and-Geolocation-Marker-icon.png" />
+        <Image Height="24" HorizontalAlignment="Left" Margin="18,139,0,0" Stretch="Fill" VerticalAlignment="Top" Width="24" Source="/mialejandria.mifaro;component/Images/Very-Basic-Settings-icon.png" />
 
     </Grid>
 </UserControl>

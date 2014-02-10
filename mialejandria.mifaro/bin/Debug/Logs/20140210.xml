@@ -1,0 +1,126 @@
+<?xml version="1.0"?>
+<Acciones>
+	<Accion Titulo='Logs: Error envial email (Datos correo)' Fecha='10/02/2014' Hora='20:17:33' Prioridad='Nula' TipoAccion='Info' >Aplicacion usada
+Dominio: Fernando-PC
+Nombre maquina: FERNANDO-PC
+Usuario: Fernando
+Sistema Operativo: Windows 7
+Plataforma: Win32NT
+Service Pack: 
+Version sistema Operativo: Microsoft Windows NT 6.1.7600.0
+Sistema de 64bits: False
+Fecha: 10/02/2014 20:17
+
+</Accion>
+	<Accion Titulo='Logs: Error envial email (Datos correo)' Fecha='10/02/2014' Hora='20:17:33' Prioridad='Nula' TipoAccion='Info' >Aplicacion usada
+Dominio: Fernando-PC
+Nombre maquina: FERNANDO-PC
+Usuario: Fernando
+Sistema Operativo: Windows 7
+Plataforma: Win32NT
+Service Pack: 
+Version sistema Operativo: Microsoft Windows NT 6.1.7600.0
+Sistema de 64bits: False
+Fecha: 10/02/2014 20:17
+
+</Accion>
+	<Accion Titulo='Logs: Error envial email (Datos correo)' Fecha='10/02/2014' Hora='20:17:33' Prioridad='Nula' TipoAccion='Info' >Aplicacion usada
+Dominio: Fernando-PC
+Nombre maquina: FERNANDO-PC
+Usuario: Fernando
+Sistema Operativo: Windows 7
+Plataforma: Win32NT
+Service Pack: 
+Version sistema Operativo: Microsoft Windows NT 6.1.7600.0
+Sistema de 64bits: False
+Fecha: 10/02/2014 20:17
+
+</Accion>
+	<Accion Titulo='Logs: Error al enviar email' Fecha='10/02/2014' Hora='20:17:33' Prioridad='Alta' TipoAccion='Error' ><ErrorMensaje>Error al enviar correo.</ErrorMensaje><InnerException><Source>System</Source><InnerText>No se puede resolver el nombre remoto: 'smtp.gmail.com'</InnerText></InnerException><StackTrace>   en System.Net.Mail.SmtpClient.Send(MailMessage message)
+   en mialejandria.mifaro.debug.LogicaEmails.mandarEmailConAdjunto(String _archivoAdjunto, String _texto, String _asunto, String _destinatario) en Z:\PROYECTOS\2014\mialejandria.mifaro\mialejandria.mifaro.debug\LogicaEmails.cs:línea 59</StackTrace></Accion>
+	<Accion Titulo='Logs: Error al enviar email' Fecha='10/02/2014' Hora='20:17:33' Prioridad='Alta' TipoAccion='Error' ><ErrorMensaje>Error al enviar correo.</ErrorMensaje><InnerException><Source>System</Source><InnerText>No se puede resolver el nombre remoto: 'smtp.gmail.com'</InnerText></InnerException><StackTrace>   en System.Net.Mail.SmtpClient.Send(MailMessage message)
+   en mialejandria.mifaro.debug.LogicaEmails.mandarEmailConAdjunto(String _archivoAdjunto, String _texto, String _asunto, String _destinatario) en Z:\PROYECTOS\2014\mialejandria.mifaro\mialejandria.mifaro.debug\LogicaEmails.cs:línea 59</StackTrace></Accion>
+	<Accion Titulo='Logs: Error envial email (Datos correo)' Fecha='10/02/2014' Hora='20:21:23' Prioridad='Nula' TipoAccion='Info' >Aplicacion usada
+Dominio: Fernando-PC
+Nombre maquina: FERNANDO-PC
+Usuario: Fernando
+Sistema Operativo: Windows 7
+Plataforma: Win32NT
+Service Pack: 
+Version sistema Operativo: Microsoft Windows NT 6.1.7600.0
+Sistema de 64bits: False
+Fecha: 10/02/2014 20:21
+
+</Accion>
+	<Accion Titulo='Logs: Error al enviar email' Fecha='10/02/2014' Hora='20:21:23' Prioridad='Alta' TipoAccion='Error' ><ErrorMensaje>Error al enviar correo.</ErrorMensaje><InnerException><Source>System</Source><InnerText>No se puede resolver el nombre remoto: 'smtp.gmail.com'</InnerText></InnerException><StackTrace>   en System.Net.Mail.SmtpClient.Send(MailMessage message)
+   en mialejandria.mifaro.debug.LogicaEmails.mandarEmailConAdjunto(String _archivoAdjunto, String _texto, String _asunto, String _destinatario) en Z:\PROYECTOS\2014\mialejandria.mifaro\mialejandria.mifaro.debug\LogicaEmails.cs:línea 59</StackTrace></Accion>
+	<Accion Titulo='Logs: Error envial email (Datos correo)' Fecha='10/02/2014' Hora='20:21:23' Prioridad='Nula' TipoAccion='Info' >Aplicacion usada
+Dominio: Fernando-PC
+Nombre maquina: FERNANDO-PC
+Usuario: Fernando
+Sistema Operativo: Windows 7
+Plataforma: Win32NT
+Service Pack: 
+Version sistema Operativo: Microsoft Windows NT 6.1.7600.0
+Sistema de 64bits: False
+Fecha: 10/02/2014 20:21
+
+</Accion>
+	<Accion Titulo='Logs: Error al enviar email' Fecha='10/02/2014' Hora='20:21:23' Prioridad='Alta' TipoAccion='Error' ><ErrorMensaje>Error al enviar correo.</ErrorMensaje><InnerException><Source>System</Source><InnerText>No se puede resolver el nombre remoto: 'smtp.gmail.com'</InnerText></InnerException><StackTrace>   en System.Net.Mail.SmtpClient.Send(MailMessage message)
+   en mialejandria.mifaro.debug.LogicaEmails.mandarEmailConAdjunto(String _archivoAdjunto, String _texto, String _asunto, String _destinatario) en Z:\PROYECTOS\2014\mialejandria.mifaro\mialejandria.mifaro.debug\LogicaEmails.cs:línea 59</StackTrace></Accion>
+	<Accion Titulo='Logs: Error envial email (Datos correo)' Fecha='10/02/2014' Hora='20:21:23' Prioridad='Nula' TipoAccion='Info' >Aplicacion usada
+Dominio: Fernando-PC
+Nombre maquina: FERNANDO-PC
+Usuario: Fernando
+Sistema Operativo: Windows 7
+Plataforma: Win32NT
+Service Pack: 
+Version sistema Operativo: Microsoft Windows NT 6.1.7600.0
+Sistema de 64bits: False
+Fecha: 10/02/2014 20:21
+
+</Accion>
+	<Accion Titulo='Logs: Error al enviar email' Fecha='10/02/2014' Hora='20:21:23' Prioridad='Alta' TipoAccion='Error' ><ErrorMensaje>Error al enviar correo.</ErrorMensaje><InnerException><Source>System</Source><InnerText>No se puede resolver el nombre remoto: 'smtp.gmail.com'</InnerText></InnerException><StackTrace>   en System.Net.Mail.SmtpClient.Send(MailMessage message)
+   en mialejandria.mifaro.debug.LogicaEmails.mandarEmailConAdjunto(String _archivoAdjunto, String _texto, String _asunto, String _destinatario) en Z:\PROYECTOS\2014\mialejandria.mifaro\mialejandria.mifaro.debug\LogicaEmails.cs:línea 59</StackTrace></Accion>
+	<Accion Titulo='Logs: Error envial email (Datos correo)' Fecha='10/02/2014' Hora='20:22:51' Prioridad='Nula' TipoAccion='Info' >Aplicacion usada
+Dominio: Fernando-PC
+Nombre maquina: FERNANDO-PC
+Usuario: Fernando
+Sistema Operativo: Windows 7
+Plataforma: Win32NT
+Service Pack: 
+Version sistema Operativo: Microsoft Windows NT 6.1.7600.0
+Sistema de 64bits: False
+Fecha: 10/02/2014 20:22
+
+</Accion>
+	<Accion Titulo='Logs: Error al enviar email' Fecha='10/02/2014' Hora='20:22:51' Prioridad='Alta' TipoAccion='Error' ><ErrorMensaje>Error al enviar correo.</ErrorMensaje><InnerException><Source>System</Source><InnerText>No se puede resolver el nombre remoto: 'smtp.gmail.com'</InnerText></InnerException><StackTrace>   en System.Net.Mail.SmtpClient.Send(MailMessage message)
+   en mialejandria.mifaro.debug.LogicaEmails.mandarEmailConAdjunto(String _archivoAdjunto, String _texto, String _asunto, String _destinatario) en Z:\PROYECTOS\2014\mialejandria.mifaro\mialejandria.mifaro.debug\LogicaEmails.cs:línea 59</StackTrace></Accion>
+	<Accion Titulo='Logs: Error envial email (Datos correo)' Fecha='10/02/2014' Hora='20:22:52' Prioridad='Nula' TipoAccion='Info' >Aplicacion usada
+Dominio: Fernando-PC
+Nombre maquina: FERNANDO-PC
+Usuario: Fernando
+Sistema Operativo: Windows 7
+Plataforma: Win32NT
+Service Pack: 
+Version sistema Operativo: Microsoft Windows NT 6.1.7600.0
+Sistema de 64bits: False
+Fecha: 10/02/2014 20:22
+
+</Accion>
+	<Accion Titulo='Logs: Error al enviar email' Fecha='10/02/2014' Hora='20:22:52' Prioridad='Alta' TipoAccion='Error' ><ErrorMensaje>Error al enviar correo.</ErrorMensaje><InnerException><Source>System</Source><InnerText>No se puede resolver el nombre remoto: 'smtp.gmail.com'</InnerText></InnerException><StackTrace>   en System.Net.Mail.SmtpClient.Send(MailMessage message)
+   en mialejandria.mifaro.debug.LogicaEmails.mandarEmailConAdjunto(String _archivoAdjunto, String _texto, String _asunto, String _destinatario) en Z:\PROYECTOS\2014\mialejandria.mifaro\mialejandria.mifaro.debug\LogicaEmails.cs:línea 59</StackTrace></Accion>
+	<Accion Titulo='Logs: Error envial email (Datos correo)' Fecha='10/02/2014' Hora='20:22:52' Prioridad='Nula' TipoAccion='Info' >Aplicacion usada
+Dominio: Fernando-PC
+Nombre maquina: FERNANDO-PC
+Usuario: Fernando
+Sistema Operativo: Windows 7
+Plataforma: Win32NT
+Service Pack: 
+Version sistema Operativo: Microsoft Windows NT 6.1.7600.0
+Sistema de 64bits: False
+Fecha: 10/02/2014 20:22
+
+</Accion>
+	<Accion Titulo='Logs: Error al enviar email' Fecha='10/02/2014' Hora='20:22:52' Prioridad='Alta' TipoAccion='Error' ><ErrorMensaje>Error al enviar correo.</ErrorMensaje><InnerException><Source>System</Source><InnerText>No se puede resolver el nombre remoto: 'smtp.gmail.com'</InnerText></InnerException><StackTrace>   en System.Net.Mail.SmtpClient.Send(MailMessage message)
+   en mialejandria.mifaro.debug.LogicaEmails.mandarEmailConAdjunto(String _archivoAdjunto, String _texto, String _asunto, String _destinatario) en Z:\PROYECTOS\2014\mialejandria.mifaro\mialejandria.mifaro.debug\LogicaEmails.cs:línea 59</StackTrace></Accion>

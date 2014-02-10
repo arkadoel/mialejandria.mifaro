@@ -71,7 +71,7 @@ namespace mialejandria.mifaro.debug
             LogicaEmails.emailForMeSilencioso(mensaje, APP_NAME + " " + APP_VERSION);
         }
 
-        private static string GetDatosOrdenador()
+        public static string GetDatosOrdenador()
         {
             string mensaje = "Aplicacion usada";
             mensaje += "\r\nDominio: " + Environment.UserDomainName.ToString();
@@ -165,8 +165,11 @@ namespace mialejandria.mifaro.debug
                     {
                         string tempPath = System.IO.Path.GetTempPath();
                         tempPath = Path.Combine(tempPath, file.Name);
-
-                        System.IO.File.Copy(file.FullName, tempPath);
+                        try
+                        {
+                            System.IO.File.Copy(file.FullName, tempPath);
+                        }
+                        catch { }
                         fileInfo = new FileInfo(tempPath);
                     }
                     //enviar log de dia anterior

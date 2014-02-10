@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="biblioDBModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="biblioDBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="UnidadesSimples" EntityType="biblioDBModel.UnidadSimple" />
+    <EntitySet Name="Usuarios" EntityType="biblioDBModel.Usuario" />
+    <EntitySet Name="Fondos" EntityType="biblioDBModel.Fondo" />
+    <EntitySet Name="Series" EntityType="biblioDBModel.Serie" />
+    <EntitySet Name="UnidadesCompuestas" EntityType="biblioDBModel.UnidadCompuesta" />
+  </EntityContainer>
+  <EntityType Name="UnidadSimple">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Titulo" MaxLength="1024" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Nivel" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CodigoReferencia" MaxLength="1024" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CodRefPadre" MaxLength="1024" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="Fecha" />
+    <Property Type="String" Name="VolumenSoporte" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Usuario">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int64" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="nombreUsuario" MaxLength="1024" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="NombreReal" MaxLength="1024" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Fondo">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Titulo" MaxLength="1024" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Nivel" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CodigoReferencia" MaxLength="1024" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CodRefPadre" MaxLength="1024" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="Fecha" />
+    <Property Type="String" Name="TipoObjeto" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Serie">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Titulo" MaxLength="1024" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Nivel" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CodigoReferencia" MaxLength="1024" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CodRefPadre" MaxLength="1024" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="Fecha" />
+    <Property Type="String" Name="TipoObjeto" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="UnidadCompuesta">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Titulo" MaxLength="1024" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Nivel" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CodigoReferencia" MaxLength="1024" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CodRefPadre" MaxLength="1024" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="Fecha" />
+    <Property Type="String" Name="TipoObjeto" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+</Schema>

@@ -5,15 +5,18 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              mc:Ignorable="d" 
              xmlns:my1="clr-namespace:mialejandria.mifaro.muebles"
-             d:DesignHeight="500" d:DesignWidth="800">
+             d:DesignHeight="500" d:DesignWidth="800" xmlns:my="clr-namespace:mialejandria.mifaro.PanelesVisores">
     <Grid Margin="0" Name="Visor3d" >
+        
         <Grid Margin="0,0,0,260">
+           
             <ScrollViewer  VerticalScrollBarVisibility="Auto" Margin="0,0,0,20" HorizontalScrollBarVisibility="Auto">
                 <StackPanel Name="navegador" Orientation="Vertical"  Grid.Row="1" Margin="5,3,0,0">
                     <StackPanel.LayoutTransform>
                         <ScaleTransform  ScaleX="{Binding ElementName=zoomSlider,Path=Value}" ScaleY="{Binding ElementName=zoomSlider,Path=Value }"/>
                     </StackPanel.LayoutTransform>
-                    <my1:Estanteria Height="39cm" Width="45cm" x:Name="estanteria1"  VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0" />
+                    
+                    
                     <!--<my1:Estanteria Height="39cm" Width="45cm" x:Name="estanteria2"  VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0" />-->
                 </StackPanel>
 
@@ -26,7 +29,8 @@
             </ScrollViewer>
 
             <Slider x:Name="zoomSlider" Minimum="0.01" Maximum="1" Value="0.1" Orientation="Horizontal" Height="20" VerticalAlignment="Bottom"  Margin="0,0,15,0" HorizontalAlignment="Right" Width="120" />
-
+            <Image Height="20" Name="btnVerFondos" Stretch="Fill" Width="24" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="10,0,0,-3" Source="/mialejandria.mifaro;component/Images/archivador.png" />
+            <ComboBox Height="23" HorizontalAlignment="Left" Margin="40,0,0,-3" Name="cmbMueble" VerticalAlignment="Bottom" Width="273" DisplayMemberPath="Titulo" Text="{Binding Path=data.Externo.Serie}" />
         </Grid>
         <Grid Margin="0,0,0,0" Name="grid1" Height="260" VerticalAlignment="Bottom">
             <Image Margin="0,5,3,5" Stretch="Fill" Source="/mialejandria.mifaro;component/Images/wood-textures_00394149.jpg" Opacity="0.8" />
@@ -37,5 +41,6 @@
             </ScrollViewer>
 
         </Grid>
+        <my:pnlVerFondoSeries Height="0" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,-5,0,0" x:Name="pnlVerFondoSeries1" Width="600" />
     </Grid>
 </UserControl>

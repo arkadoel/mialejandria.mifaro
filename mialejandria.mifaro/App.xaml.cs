@@ -16,6 +16,7 @@ namespace mialejandria.mifaro
         {
             if (logic.Licencia.LicenciaVigente())
             {
+                debug.Log.initLog();
                 //Licencia vigente puede seguir
                 new MainWindow().Show();
             }

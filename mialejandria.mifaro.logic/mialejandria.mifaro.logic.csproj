@@ -50,9 +50,12 @@
     <Reference Include="PresentationFramework" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Archivistica.cs" />
+    <Compile Include="comun.cs" />
     <Compile Include="Efectos.cs" />
     <Compile Include="gestionBiblioDB.cs" />
     <Compile Include="Licencia.cs" />
+    <Compile Include="LogicaUsuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -89,6 +92,10 @@
     <ProjectReference Include="..\mialejandria.mifaro.data\mialejandria.mifaro.data.csproj">
       <Project>{0DFFF745-ABC1-4F5D-869B-C6D862310319}</Project>
       <Name>mialejandria.mifaro.data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\mialejandria.mifaro.debug\mialejandria.mifaro.debug.csproj">
+      <Project>{FAE1D1B0-F6E1-4D56-B61D-E4175F466BF9}</Project>
+      <Name>mialejandria.mifaro.debug</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

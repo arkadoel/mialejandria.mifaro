@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="biblioDBModelStoreContainer" CdmEntityContainer="biblioDBEntities">
+    <EntitySetMapping Name="UnidadesSimples">
+      <EntityTypeMapping TypeName="biblioDBModel.UnidadSimple">
+        <MappingFragment StoreEntitySet="UnidadSimple">
+          <ScalarProperty Name="VolumenSoporte" ColumnName="VolumenSoporte" />
+          <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+          <ScalarProperty Name="CodRefPadre" ColumnName="CodRefPadre" />
+          <ScalarProperty Name="CodigoReferencia" ColumnName="CodigoReferencia" />
+          <ScalarProperty Name="Nivel" ColumnName="Nivel" />
+          <ScalarProperty Name="Titulo" ColumnName="Titulo" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Usuarios">
+      <EntityTypeMapping TypeName="biblioDBModel.Usuario">
+        <MappingFragment StoreEntitySet="Usuario">
+          <ScalarProperty Name="NombreReal" ColumnName="NombreReal" />
+          <ScalarProperty Name="nombreUsuario" ColumnName="nombreUsuario" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Fondos">
+      <EntityTypeMapping TypeName="biblioDBModel.Fondo">
+        <MappingFragment StoreEntitySet="Fondo">
+          <ScalarProperty Name="TipoObjeto" ColumnName="TipoObjeto" />
+          <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+          <ScalarProperty Name="CodRefPadre" ColumnName="CodRefPadre" />
+          <ScalarProperty Name="CodigoReferencia" ColumnName="CodigoReferencia" />
+          <ScalarProperty Name="Nivel" ColumnName="Nivel" />
+          <ScalarProperty Name="Titulo" ColumnName="Titulo" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Series">
+      <EntityTypeMapping TypeName="biblioDBModel.Serie">
+        <MappingFragment StoreEntitySet="Serie">
+          <ScalarProperty Name="TipoObjeto" ColumnName="TipoObjeto" />
+          <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+          <ScalarProperty Name="CodRefPadre" ColumnName="CodRefPadre" />
+          <ScalarProperty Name="CodigoReferencia" ColumnName="CodigoReferencia" />
+          <ScalarProperty Name="Nivel" ColumnName="Nivel" />
+          <ScalarProperty Name="Titulo" ColumnName="Titulo" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UnidadesCompuestas">
+      <EntityTypeMapping TypeName="biblioDBModel.UnidadCompuesta">
+        <MappingFragment StoreEntitySet="UnidadCompuesta">
+          <ScalarProperty Name="TipoObjeto" ColumnName="TipoObjeto" />
+          <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+          <ScalarProperty Name="CodRefPadre" ColumnName="CodRefPadre" />
+          <ScalarProperty Name="CodigoReferencia" ColumnName="CodigoReferencia" />
+          <ScalarProperty Name="Nivel" ColumnName="Nivel" />
+          <ScalarProperty Name="Titulo" ColumnName="Titulo" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

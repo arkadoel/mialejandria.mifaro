@@ -1,0 +1,13 @@
+﻿<UserControl x:Class="mialejandria.mifaro.PanelesVisores.pnlDarOpinion"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="400" d:DesignWidth="500" Margin="0">
+    <Grid Margin="0">
+        <TextBlock Height="62" Margin="12,13,12,0" TextWrapping="Wrap" Name="lbl" Text="Tu opinion nos importa" FontWeight="Heavy" FontSize="14" VerticalAlignment="Top" />
+        <TextBox Margin="12,52,12,48" BorderBrush="Black" Background="GhostWhite" Name="txtMensaje" AcceptsReturn="true" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto"/>
+        <Button Content="Enviar" Height="23" HorizontalAlignment="Right" Margin="0,0,12,19" Name="btnEnviar" VerticalAlignment="Bottom" Width="75" Click="btnEnviar_Click" />
+    </Grid>
+</UserControl>

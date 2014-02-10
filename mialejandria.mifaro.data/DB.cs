@@ -30,7 +30,7 @@ namespace mialejandria.mifaro.data
 
         public static void setBiblioDBConexion(string path)
         {
-            ConexionBiblioDB = @"Data Source=.\SQLEXPRESS;AttachDbFilename=" + path + @"\Config\biblioDB.mdf;Integrated Security=True;Persist Security Info=True;User ID=mialejandria;Password=FaroMiFaro;Asynchronous Processing=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;User Instance=True";
+            ConexionBiblioDB = @"metadata=res://*/Externo.ModeloBiblioDB.csdl|res://*/Externo.ModeloBiblioDB.ssdl|res://*/Externo.ModeloBiblioDB.msl;provider=System.Data.SqlClient;provider connection string=""Data Source=.\SQLEXPRESS;AttachDbFilename=" + path + @"\Config\biblioDB.mdf;Integrated Security=True;Persist Security Info=True;User ID=mialejandria;Asynchronous Processing=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;User Instance=True;MultipleActiveResultSets=True""";
         }
 
         public static Externo.biblioDBEntities TablasBiblioDB

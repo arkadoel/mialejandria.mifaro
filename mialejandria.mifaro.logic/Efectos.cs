@@ -24,7 +24,7 @@ namespace mialejandria.mifaro.logic
             {
                 //mostrar panel
                 menu.Effect = null;
-                menu.Effect = sombra;
+                
                 menu.Visibility = System.Windows.Visibility.Visible;
 
                 for (int i = 1; i < MAX_SIZE; i += 6)
@@ -33,9 +33,11 @@ namespace mialejandria.mifaro.logic
                     logic.Util.DoEvents(menu.Dispatcher);
                     //System.Threading.Thread.Sleep(1);		
                 }
+                menu.Effect = sombra;
             }
             else
             {
+                menu.Effect = null;
                 for (int i = MAX_SIZE; i >= MIN_SIZE; i -= 6)
                 {
                     menu.Height = i;
@@ -47,7 +49,7 @@ namespace mialejandria.mifaro.logic
                 {
                     menu.Visibility = System.Windows.Visibility.Hidden;
                 }
-                menu.Effect = null;
+               
                 
             }
         }

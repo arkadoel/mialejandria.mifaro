@@ -113,11 +113,8 @@
     <AppDesigner Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="MifaroLocalDB.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
+    <Resource Include="MifaroLocalDB.mdf" />
     <Content Include="MifaroLocalDB_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>MifaroLocalDB.mdf</DependentUpon>
     </Content>
   </ItemGroup>

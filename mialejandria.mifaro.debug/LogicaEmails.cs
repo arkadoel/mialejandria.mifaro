@@ -12,9 +12,9 @@ namespace mialejandria.mifaro.debug
 {
     public class LogicaEmails
     {
-        public const string EMAIL = "info@mialejandria.es";
-        public const string EMAIL_SENDER = "mipafedevelop@gmail.com";
-        public const string PASS = "EmailSender";
+        public const string EMAIL = "correoalejandria@gmail.com";
+        public const string EMAIL_SENDER = "correoalejandria@gmail.com";
+        public const string PASS = "Faro2014";
 
 
         /// <summary>
