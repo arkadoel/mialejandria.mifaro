@@ -1,7 +1,7 @@
 ﻿<Window x:Class="mialejandria.mifaro.VisoresDocumentos.VentanaDocumentos"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Visor para documentos" Height="500" Width="900" WindowStartupLocation="CenterScreen"
+        Title="Visor para documentos" Height="550" Width="900" WindowStartupLocation="CenterScreen"
         WindowStyle="None" FontFamily="Verdana"  ResizeMode="CanResize" Background="#FFB3C6E2" xmlns:my="clr-namespace:mialejandria.mifaro.Controles" Icon="/mialejandria.mifaro;component/Images/LogoMiAlejandria.png">
     <Grid Background="#FFD6D6F5" Name="fondo" MouseLeftButtonDown="fondo_MouseLeftButtonDown">
         <Label Content="Mi Alejandría -> Visor Documento" FontSize="16" Foreground="#FF6890FF" FontWeight="Heavy" Height="32" HorizontalAlignment="Left" Margin="35,0,0,0" Name="label2" VerticalAlignment="Top" Width="387" >
@@ -11,20 +11,24 @@
 
         <my:BotonCerrado HorizontalAlignment="Right" Width="24" Margin="0,0,15,0" x:Name="btnCerrar" MouseLeftButtonDown="btnCerrar_MouseLeftButtonDown" Height="24" VerticalAlignment="Top" />
         <my:BotonRestaurar HorizontalAlignment="Right" Margin="0,0,47,0" Width="24" Height="24" x:Name="btnRestaurar" VerticalAlignment="Top" MouseLeftButtonDown="btnRestaurar_MouseLeftButtonDown" />
-        <Rectangle Margin="9,39,276,11" Fill="#FFD6D6F5" Stroke="Black" StrokeThickness="3" >
+        <Rectangle Margin="9,39,316,11" Fill="#FFD6D6F5" Stroke="Black" StrokeThickness="3" >
             <Rectangle.Effect>
                 <DropShadowEffect Direction="0" BlurRadius="10" ShadowDepth="-10"></DropShadowEffect>
             </Rectangle.Effect>
         </Rectangle>
-        <WindowsFormsHost Margin="10,38,277,12" Name="windowsFormsHost1" >
+        <WindowsFormsHost Margin="10,38,317,12" Name="windowsFormsHost1" >
         </WindowsFormsHost>
         <Label Content="Etiquetas" FontSize="14" FontWeight="Heavy" Foreground="Gray" Height="30" HorizontalAlignment="Right" HorizontalContentAlignment="Center" Margin="0,38,133,0" Name="label1" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="128" />
-        <WrapPanel Height="146" Margin="0,74,12,0" Name="panelEtiquetas" VerticalAlignment="Top" HorizontalAlignment="Right" Width="249" />
-        <Label Content="Descripción" FontSize="14" FontWeight="Heavy" Foreground="Gray" Height="30" HorizontalAlignment="Right" HorizontalContentAlignment="Center" Margin="0,226,133,0" Name="label3" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="128" />
-        <TextBlock Height="176" HorizontalAlignment="Right" Margin="0,266,12,0" Name="textBlock1" TextWrapping="Wrap" FontFamily="Verdana" Foreground="#FF4E4848" VerticalAlignment="Top" Width="250" Text="Documento que se manda todos los veranos para su verificacion por el procesador de datos de la Junta" >
+        <ScrollViewer Width="295" HorizontalAlignment="Right" VerticalScrollBarVisibility="Auto" Margin="0,94,5,210"  HorizontalScrollBarVisibility="Disabled">
+            <WrapPanel   Name="panelEtiquetas" Width="290" HorizontalAlignment="Left"  />
+        </ScrollViewer>
+        <Label Content="Descripción" FontSize="14" FontWeight="Heavy" Foreground="Gray" Height="30" HorizontalAlignment="Right" HorizontalContentAlignment="Center" Margin="0,0,133,176" Name="label3" VerticalAlignment="Bottom" VerticalContentAlignment="Center" Width="128" />
+        <TextBlock HorizontalAlignment="Right" Margin="0,0,12,12" Name="textBlock1" TextWrapping="Wrap" FontFamily="Verdana" Foreground="#FF4E4848" Width="289" Text="Documento que se manda todos los veranos para su verificacion por el procesador de datos de la Junta" Height="158" VerticalAlignment="Bottom">
             <TextBlock.Effect>
                 <DropShadowEffect ShadowDepth="0" BlurRadius="1" Direction="0"/>
             </TextBlock.Effect>
         </TextBlock>
+        <TextBox Height="27" HorizontalAlignment="Right" Margin="0,66,39,0" Foreground="DimGray" Background="{x:Null}" Name="txtAddLabel" VerticalAlignment="Top" BorderBrush="Black" BorderThickness="2" Width="261" />
+        <Image Height="24" HorizontalAlignment="Right" Margin="0,66,10,0" Name="btnAddEtiqueta" Stretch="Fill" VerticalAlignment="Top" Width="24" Source="/mialejandria.mifaro;component/Images/Mathematic-Plus-icon.png" />
     </Grid>
 </Window>

@@ -137,6 +137,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Resource Include="Images\Mathematic-Plus-icon.png" />
     <Resource Include="Images\Very-Basic-Settings-icon.png" />
     <Resource Include="Images\System-Save-icon.png" />
     <EmbeddedResource Include="VisoresDocumentos\visorPDF.resx">

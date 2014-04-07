@@ -13,7 +13,21 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documentacion", "Documentac
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mialejandria.mifaro.documentacion", "mialejandria.mifaro.documentacion\mialejandria.mifaro.documentacion.csproj", "{47FFBC49-3B3E-47C4-B9B8-877CD31E85BE}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Testing", "Testing", "{CDCDF30B-93EC-440F-83CF-1DB499A6F4F1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mialejandria.mifaro.test", "mialejandria.mifaro.test\mialejandria.mifaro.test.csproj", "{F6E7A2EA-9432-4664-A145-064601409918}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{682540B0-E472-4DAB-B021-0FFFBBA5C0B8}"
+	ProjectSection(SolutionItems) = preProject
+		Local.testsettings = Local.testsettings
+		mialejandria.mifaro.vsmdi = mialejandria.mifaro.vsmdi
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
 Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = mialejandria.mifaro.vsmdi
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Debug|Mixed Platforms = Debug|Mixed Platforms
@@ -73,11 +87,23 @@ Global
 		{47FFBC49-3B3E-47C4-B9B8-877CD31E85BE}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{47FFBC49-3B3E-47C4-B9B8-877CD31E85BE}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{47FFBC49-3B3E-47C4-B9B8-877CD31E85BE}.Release|x86.ActiveCfg = Release|Any CPU
+		{F6E7A2EA-9432-4664-A145-064601409918}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6E7A2EA-9432-4664-A145-064601409918}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6E7A2EA-9432-4664-A145-064601409918}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{F6E7A2EA-9432-4664-A145-064601409918}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{F6E7A2EA-9432-4664-A145-064601409918}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{F6E7A2EA-9432-4664-A145-064601409918}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6E7A2EA-9432-4664-A145-064601409918}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6E7A2EA-9432-4664-A145-064601409918}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{F6E7A2EA-9432-4664-A145-064601409918}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{F6E7A2EA-9432-4664-A145-064601409918}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{47FFBC49-3B3E-47C4-B9B8-877CD31E85BE} = {8553A30B-9FDB-4C6C-A0B2-4EAA012E0A4E}
+		{F6E7A2EA-9432-4664-A145-064601409918} = {CDCDF30B-93EC-440F-83CF-1DB499A6F4F1}
+		{682540B0-E472-4DAB-B021-0FFFBBA5C0B8} = {CDCDF30B-93EC-440F-83CF-1DB499A6F4F1}
 	EndGlobalSection
 EndGlobal

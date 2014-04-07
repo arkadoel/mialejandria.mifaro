@@ -49,7 +49,7 @@ namespace Diseños
 
         private void btnVer_Click(object sender, RoutedEventArgs e)
         {
-           mialejandria.mifaro.VisoresDocumentos.VentanaDocumentos vi = new mialejandria.mifaro.VisoresDocumentos.VentanaDocumentos();
+           mialejandria.mifaro.VisoresDocumentos.VentanaDocumentos vi = new mialejandria.mifaro.VisoresDocumentos.VentanaDocumentos( CodigoReferencia);
             visorPDF v = new visorPDF();
             v.axAcroPDF1.LoadFile(ruta);
             v.axAcroPDF1.src = ruta;

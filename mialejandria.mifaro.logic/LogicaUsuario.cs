@@ -9,7 +9,9 @@ namespace mialejandria.mifaro.logic
     public class LogicaUsuario
     {
 
-        //TODO: hacer que se guarde forma automatica el usuario tambien en la base de datos biblioDB
+        /* TODO: 
+         *      hacer que se guarde forma automatica el usuario tambien en la base de datos biblioDB 
+         */
 
         /// <summary>
         /// Obtiene el nombre del usuario que usa la aplicacion

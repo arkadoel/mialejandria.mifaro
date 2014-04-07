@@ -11,6 +11,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using mialejandria.mifaro.VisoresDocumentos;
 
 namespace mialejandria.mifaro.Controles
 {
@@ -19,12 +20,47 @@ namespace mialejandria.mifaro.Controles
     /// </summary>
     public partial class Etiqueta : UserControl
     {
-        private string nombreEtiqueta { get; set; }
-        public Etiqueta(string nombre, SolidColorBrush color)
+        private data.Externo.EtiquetasUsuario datosEtiqueta { get; set; }
+        private VentanaDocumentos Parent { get; set; }
+
+        public Etiqueta(data.Externo.EtiquetasUsuario et, SolidColorBrush color, VentanaDocumentos _parent)
         {
             InitializeComponent();
-            lblEtiqueta.Content = nombre;
+            Parent = _parent;
+            lblEtiqueta.Content = et.Etiqueta;
             Fondo.Fill = color;
+            datosEtiqueta = et;
+            this.Loaded += new RoutedEventHandler(Etiqueta_Loaded);
+            
+            
+        }
+
+        void Etiqueta_Loaded(object sender, RoutedEventArgs e)
+        {
+            if (IsLoaded == true)
+            {
+                int caracteres = datosEtiqueta.Etiqueta.Length;
+                if (caracteres <=5)
+                {
+                    this.Width = caracteres * 18;
+                }
+                else if (caracteres < 13)
+                {
+                    this.Width = caracteres * 16;
+                }
+                else this.Width = caracteres * 9.8;
+            }
+        }
+
+        private void btnEliminar_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            logic.Archivistica.EliminarEtiqueta(datosEtiqueta);
+            Parent.panelEtiquetas.Children.Remove(this);
+        }
+
+        private void UserControl_Unloaded(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

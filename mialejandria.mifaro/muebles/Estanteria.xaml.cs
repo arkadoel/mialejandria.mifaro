@@ -72,8 +72,9 @@ namespace mialejandria.mifaro.muebles
             comun.Visor3D.mesaDocumentos.Children.Clear();
             foreach (FileInfo documento in ficheros)
             {
-                
-                Diseños.VisorPdfWpf vi = new Diseños.VisorPdfWpf(documento.FullName);
+                string codigo = documento.Name.Replace(documento.Extension, "");
+                codigo = codigo.Replace("_", ".");
+                Diseños.VisorPdfWpf vi = new Diseños.VisorPdfWpf(documento.FullName, codigo);
                 /*
                 visorPDF v = new visorPDF();
                 v.axAcroPDF1.LoadFile(documento.FullName);

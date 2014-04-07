@@ -24,11 +24,12 @@
         </EntityType>
         <EntityType Name="EtiquetasUsuario">
           <Key>
-            <PropertyRef Name="IDusuario" />
+            <PropertyRef Name="id" />
           </Key>
-          <Property Name="IDusuario" Type="bigint" Nullable="false" />
+          <Property Name="IDusuario" Type="varchar" MaxLength="50" />
           <Property Name="Etiqueta" Type="varchar" MaxLength="25" />
           <Property Name="CodUnidadSimple" Type="varchar" MaxLength="1024" />
+          <Property Name="id" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
         </EntityType>
         <EntityType Name="Fondo">
           <Key>
@@ -165,11 +166,12 @@
         </EntityType>
         <EntityType Name="EtiquetasUsuario">
           <Key>
-            <PropertyRef Name="IDusuario" />
+            <PropertyRef Name="id" />
           </Key>
-          <Property Type="Int64" Name="IDusuario" Nullable="false" />
+          <Property Type="String" Name="IDusuario" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Type="String" Name="Etiqueta" MaxLength="25" FixedLength="false" Unicode="false" />
           <Property Type="String" Name="CodUnidadSimple" MaxLength="1024" FixedLength="false" Unicode="false" />
+          <Property Type="Int64" Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
         </EntityType>
         </Schema>
     </edmx:ConceptualModels>
@@ -250,6 +252,7 @@
           <EntitySetMapping Name="EtiquetasUsuarios">
             <EntityTypeMapping TypeName="biblioDBModel.EtiquetasUsuario">
               <MappingFragment StoreEntitySet="EtiquetasUsuario">
+                <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="CodUnidadSimple" ColumnName="CodUnidadSimple" />
                 <ScalarProperty Name="Etiqueta" ColumnName="Etiqueta" />
                 <ScalarProperty Name="IDusuario" ColumnName="IDusuario" />
@@ -283,7 +286,7 @@
         <EntityTypeShape EntityType="biblioDBModel.UnidadCompuesta" Width="1.5" PointX="2.5" PointY="0.625" Height="2.3648893229166674" />
         <EntityTypeShape EntityType="biblioDBModel.UnidadSimple" Width="1.5" PointX="0.625" PointY="3.5" Height="2.3648893229166674" />
         <EntityTypeShape EntityType="biblioDBModel.DescripcionesUsuario" Width="1.5" PointX="2.375" PointY="3.5" Height="1.5956835937499996" />
-        <EntityTypeShape EntityType="biblioDBModel.EtiquetasUsuario" Width="1.5" PointX="4.25" PointY="3.5" Height="1.5956835937499996" />
+        <EntityTypeShape EntityType="biblioDBModel.EtiquetasUsuario" Width="1.5" PointX="4.375" PointY="3.75" Height="1.7879850260416674" />
       </Diagram>
     </Diagrams>
   </Designer>

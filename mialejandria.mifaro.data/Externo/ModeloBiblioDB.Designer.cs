@@ -360,11 +360,11 @@ namespace mialejandria.mifaro.data.Externo
         /// <summary>
         /// Create a new EtiquetasUsuario object.
         /// </summary>
-        /// <param name="iDusuario">Initial value of the IDusuario property.</param>
-        public static EtiquetasUsuario CreateEtiquetasUsuario(global::System.Int64 iDusuario)
+        /// <param name="id">Initial value of the id property.</param>
+        public static EtiquetasUsuario CreateEtiquetasUsuario(global::System.Int64 id)
         {
             EtiquetasUsuario etiquetasUsuario = new EtiquetasUsuario();
-            etiquetasUsuario.IDusuario = iDusuario;
+            etiquetasUsuario.id = id;
             return etiquetasUsuario;
         }
 
@@ -374,9 +374,9 @@ namespace mialejandria.mifaro.data.Externo
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
-        [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
         [DataMemberAttribute()]
-        public global::System.Int64 IDusuario
+        public global::System.String IDusuario
         {
             get
             {
@@ -384,18 +384,15 @@ namespace mialejandria.mifaro.data.Externo
             }
             set
             {
-                if (_IDusuario != value)
-                {
-                    OnIDusuarioChanging(value);
-                    ReportPropertyChanging("IDusuario");
-                    _IDusuario = StructuralObject.SetValidValue(value);
-                    ReportPropertyChanged("IDusuario");
-                    OnIDusuarioChanged();
-                }
+                OnIDusuarioChanging(value);
+                ReportPropertyChanging("IDusuario");
+                _IDusuario = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("IDusuario");
+                OnIDusuarioChanged();
             }
         }
-        private global::System.Int64 _IDusuario;
-        partial void OnIDusuarioChanging(global::System.Int64 value);
+        private global::System.String _IDusuario;
+        partial void OnIDusuarioChanging(global::System.String value);
         partial void OnIDusuarioChanged();
     
         /// <summary>
@@ -445,6 +442,33 @@ namespace mialejandria.mifaro.data.Externo
         private global::System.String _CodUnidadSimple;
         partial void OnCodUnidadSimpleChanging(global::System.String value);
         partial void OnCodUnidadSimpleChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int64 id
+        {
+            get
+            {
+                return _id;
+            }
+            set
+            {
+                if (_id != value)
+                {
+                    OnidChanging(value);
+                    ReportPropertyChanging("id");
+                    _id = StructuralObject.SetValidValue(value);
+                    ReportPropertyChanged("id");
+                    OnidChanged();
+                }
+            }
+        }
+        private global::System.Int64 _id;
+        partial void OnidChanging(global::System.Int64 value);
+        partial void OnidChanged();
 
         #endregion
     

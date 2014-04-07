@@ -50,5 +50,9 @@ namespace mialejandria.mifaro.data
             }
         }
 
+        public static void guardarCambiosBiblioDB()
+        {
+            DB.TablasBiblioDB.SaveChanges(System.Data.Objects.SaveOptions.AcceptAllChangesAfterSave);
+        }
     }
 }
